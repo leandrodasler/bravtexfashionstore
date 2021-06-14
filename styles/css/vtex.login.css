@@ -1,0 +1,116 @@
+:global(.vtex-login-2-x-container) {
+	z-index: 2;
+}
+:global(.vtex-login-2-x-container) :global(.vtex-button__label):before {
+	content: '';
+	background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.707 0H7.293C5.803 0 4.644 1.295 4.809 2.776L5.253 6.776C5.394 8.042 6.464 9 7.737 9H10.263C11.536 9 12.606 8.042 12.747 6.776L13.191 2.776C13.356 1.295 12.196 0 10.707 0ZM10.707 1.5C11.096 1.5 11.341 1.709 11.452 1.833C11.563 1.958 11.743 2.224 11.701 2.61L11.256 6.61C11.2 7.118 10.772 7.5 10.263 7.5H7.737C7.228 7.5 6.8 7.118 6.743 6.61L6.299 2.61C6.256 2.224 6.436 1.958 6.548 1.833C6.659 1.709 6.904 1.5 7.293 1.5H10.707ZM14.012 11.5H3.988C1.658 11.5 0 13.228 0 15.807C0 17.578 0.783 18 2.02 18H15.979C17.43 18 18 17.152 18 15.807C18 13.231 16.342 11.5 14.012 11.5ZM14.012 13C14.716 13 15.367 13.285 15.846 13.801C16.324 14.318 16.504 14.84 16.504 15.692C16.504 16.158 16.384 16.5 15.979 16.5H2.02C1.723 16.5 1.496 16.267 1.496 15.692C1.496 14.974 1.675 14.318 2.154 13.801C2.633 13.285 3.284 13 3.988 13H14.012Z' fill='%233F3F40'/%3E%3Cmask id='mask0' mask-type='alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='18' height='18'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.707 0H7.293C5.803 0 4.644 1.295 4.809 2.776L5.253 6.776C5.394 8.042 6.464 9 7.737 9H10.263C11.536 9 12.606 8.042 12.747 6.776L13.191 2.776C13.356 1.295 12.196 0 10.707 0ZM10.707 1.5C11.096 1.5 11.341 1.709 11.452 1.833C11.563 1.958 11.743 2.224 11.701 2.61L11.256 6.61C11.2 7.118 10.772 7.5 10.263 7.5H7.737C7.228 7.5 6.8 7.118 6.743 6.61L6.299 2.61C6.256 2.224 6.436 1.958 6.548 1.833C6.659 1.709 6.904 1.5 7.293 1.5H10.707ZM14.012 11.5H3.988C1.658 11.5 0 13.228 0 15.807C0 17.578 0.783 18 2.02 18H15.979C17.43 18 18 17.152 18 15.807C18 13.231 16.342 11.5 14.012 11.5ZM14.012 13C14.716 13 15.367 13.285 15.846 13.801C16.324 14.318 16.504 14.84 16.504 15.692C16.504 16.158 16.384 16.5 15.979 16.5H2.02C1.723 16.5 1.496 16.267 1.496 15.692C1.496 14.974 1.675 14.318 2.154 13.801C2.633 13.285 3.284 13 3.988 13H14.012Z' fill='white'/%3E%3C/mask%3E%3Cg mask='url(%23mask0)'%3E%3Crect x='-15' y='-15' width='48' height='48' fill='%23142032'/%3E%3C/g%3E%3C/svg%3E%0A");	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: contain;
+	padding: 0;
+	height: 26px;
+	width: 26px;
+	margin-top: 0;
+}
+:global(.vtex-login-2-x-label) {
+	white-space: nowrap;
+	font-size: 14px;
+	font-weight: bold;
+	color: #142032;
+	text-align: left;
+	text-transform: none;
+}
+div[class*='vtex-login-2-x-container'] :global(.vtex-button__label) {
+	padding: 0 !important;
+	margin-left: 18px;
+	text-transform: initial;
+}
+div[class*='vtex-login-2-x-container'] :global(.relative) {
+	margin: auto;
+}
+h3[class*='vtex-login-2-x-formTitle'] {
+	text-align: start;
+	border-bottom: 1px solid #dddddd;
+	border-radius: 0;
+	padding-bottom: 20px;
+}
+div[class*='vtex-login-2-x-accessCodeOptionBtn'] button:global(.vtex-button) div[class*='vtex-button__label'],
+div[class*='vtex-login-2-x-emailPasswordOptionBtn'] button:global(.vtex-button) div[class*='vtex-button__label'] {
+	padding: 0;
+}
+div[class*='vtex-login-2-x-accessCodeOptionBtn'] button:global(.vtex-button),
+div[class*='vtex-login-2-x-emailPasswordOptionBtn'] button:global(.vtex-button) {
+	border: 1px solid #ccc6c0;
+	background-color: #ffffff;
+	color: #000000;
+	text-transform: none;
+}
+div[class*='vtex-login-2-x-emailPasswordOptionBtn'] button:global(.vtex-button):hover {
+	border: 1px solid #F71963;
+	background-color: #F71963;
+	color: #F71963;
+}
+div[class*='vtex-login-2-x-options'] {
+	min-width: 17rem;
+}
+div[class*='vtex-login-2-x-arrowUp'] {
+	width: 1.5rem;
+}
+span[class*='vtex-login-2-x-profile'] {
+	white-space: nowrap;
+	text-transform: initial;
+	max-width: 77px;
+	text-align: start;
+	display: flex;
+	font-size: 14px;
+	align-items: flex-end;
+	font-weight: bold;
+	color: #F71963;
+}
+span[class*='vtex-login-2-x-profile']::after {
+	content: '';
+	background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 7L8 11L12 7' stroke='%2300AC5A' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
+		no-repeat;
+	display: flex;
+	width: 16px;
+	height: 16px;
+	margin-right: 12px;
+}
+@media screen and (min-width: 1025px) {
+	.container :global(.vtex-button__label) span div div {
+		padding-top: 5px;
+		width: 100%;
+		display: block;
+	}
+	.container :global(.vtex-button) {
+		padding: 0;
+	}
+	.container :global(.vtex-button):focus {
+		background: transparent;
+	}
+}
+@media only screen and (max-width: 1025px) {
+	.container :global(.vtex-button__label) {
+		margin: 0 18px 0 0 !important;
+	}
+}
+
+.formTitle {
+	text-align: center !important;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.accessCodeOptionBtn :global(.vtex-button) {
+	border: none !important;
+	color: #F71963 !important;
+	font-size: 14px;
+}
+
+.emailPasswordOptionBtn :global(.vtex-button){
+	background-color: #F71963 !important;
+	color: white !important;
+	font-weight: bold;
+	text-transform: uppercase !important;
+	border: 1px solid #F71963 !important;
+	font-size: 14px;
+}

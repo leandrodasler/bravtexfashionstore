@@ -1,0 +1,305 @@
+{
+  "store.home": {
+    "blocks": ["responsive-layout.desktop#home"]
+  },
+  "responsive-layout.desktop#home": {
+    "children": [
+      "flex-layout.row#home-banners",
+      "flex-layout.row#shelf-titlediv1",
+      "flex-layout.row#shelf1",
+      "flex-layout.row#shelf-titlediv2",
+      "flex-layout.row#shelf2",
+      "flex-layout.row#info-cards"
+    ],
+    "title": "Home - Desktop"
+  },
+  "flex-layout.row#home-banners": {
+    "children": ["flex-layout.col#home-banners"]
+  },
+  "flex-layout.col#home-banners": {
+    "children": ["image#firstbanner", "image#secondbanner"],
+    "props": {
+      "blockClass": "homeBanners"
+    }
+  },
+  "image#firstbanner": {
+    "props": {
+      "src": "https://bravtexfashionstore.vtexassets.com/arquivos/shine.png",
+      "maxWidth": "100%"
+    }
+  },
+  "image#secondbanner": {
+    "props": {
+      "src": "https://bravtexfashionstore.vtexassets.com/arquivos/outunoinverno.png",
+      "maxWidth": "100%"
+    }
+  },
+  "flex-layout.row#info-cards": {
+    "props": {
+      "blockClass": "infoCards"
+    },
+    "children": ["flex-layout.col#dontmiss-title"]
+  },
+  "flex-layout.col#dontmiss-title": {
+    "children": [
+      "flex-layout.row#dontmiss-title",
+      "flex-layout.row#dontmiss-cardsdiv"
+    ]
+  },
+  "flex-layout.row#dontmiss-title": {
+    "props": {
+      "blockClass": "infoCardsTitle"
+    },
+    "children": ["rich-text#dontmiss"]
+  },
+  "rich-text#dontmiss": {
+    "props": {
+      "text": "Não fique de fora",
+      "textColor": "#142032",
+      "blockClass": "dontmissglobaltitle",
+      "font": "t-heading-3"
+    },
+    "title": "Dontmiss text"
+  },
+  "flex-layout.row#dontmiss-cardsdiv": {
+    "props": {
+      "blockClass": "infoCardsDiv"
+    },
+    "children": [
+      "flex-layout.col#dontmiss-cards",
+      "flex-layout.col#vtexclub-cards",
+      "flex-layout.col#dontmiss-cards"
+    ]
+  },
+  "flex-layout.col#dontmiss-cards": {
+    "props": {
+      "blockClass": "infoCard"
+    },
+    "children": [
+      "rich-text#buywithwhatsapp-title",
+      "rich-text#buywithwhatsapp-content",
+      "menu-item#buttonWhatsapp"
+    ]
+  },
+  "rich-text#buywithwhatsapp-title": {
+    "props": {
+      "text": "Compre pelo Whatsapp",
+      "textColor": "#142032",
+      "blockClass": "dontmissTitle",
+      "font": "t-heading-4"
+    },
+    "title": "Dontmiss text"
+  },
+  "rich-text#buywithwhatsapp-content": {
+    "props": {
+      "text": "Nossa equipe está preparada para te atender à distância. Converse com uma das nossas personal shoppers, tire suas dúvidas e receba  sugestões personalizadas.",
+      "textColor": "#142032",
+      "blockClass": "dontmiss",
+      "font": "t-heading-6"
+    },
+    "title": "Dontmiss text"
+  },
+  "menu-item#buttonWhatsapp": {
+    "props": {
+      "blockClass": "buttonWhatsapp",
+      "id": "buttonWhatsapp",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "buttonWhatsapp",
+        "text": "MANDAR UMA MENSAGEM"
+      }
+    }
+  },
+  "flex-layout.col#vtexclub-cards": {
+    "props": {
+      "blockClass": "infoCardFidelidade"
+    },
+    "children": [
+      "image#fidelidadebanner",
+      "rich-text#vtexclub-cards-content",
+      "menu-item#vtexclub-cards"
+    ]
+  },
+  "image#fidelidadebanner": {
+    "props": {
+      "src": "https://bravtexfashionstore.vtexassets.com/arquivos/banner-fidelidade.png",
+      "maxWidth": "100%"
+    }
+  },
+  "rich-text#vtexclub-cards-content": {
+    "props": {
+      "text": "Tenha acesso aos lançamentos em primeira mão, ganhe bônus de 10% em cada compra e muito mais.",
+      "textColor": "#142032",
+      "blockClass": "dontmissfidelidade",
+      "font": "t-heading-6"
+    },
+    "title": "Dontmiss text"
+  },
+  "menu-item#vtexclub-cards": {
+    "props": {
+      "blockClass": "buttonWhatsapp",
+      "id": "vtexclub",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "vtexclub",
+        "text": "QUERO FAZER PARTE"
+      }
+    }
+  },
+  "flex-layout.row#shelf-titlediv1": {
+		"children": ["flex-layout.row#shelf-title1"],
+		"props": {
+			"blockClass": ["shelf-titlediv1"]
+		},
+		"title": "Home - Prateleira 1 - Título"
+	},
+  "flex-layout.row#shelf-title1": {
+		"children": ["rich-text#shelf-title1", "menu-item#shelf-link1"],
+		"props": {
+			"blockClass": ["shelf-title"]
+		},
+		"title": "Home - Prateleira 1 - Título"
+	},
+  "rich-text#shelf-title1": {
+    "props": {
+      "text": "## Lançamentos",
+      "blockClass": "shelfTitle"
+    },
+    "title": "Prateleira 1 - Título"
+  },
+  "menu-item#shelf-link1": {
+    "props": {
+      "blockClass": "shelfLink",
+      "id": "shelfLink1",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/masculino/roupas/camisetas",
+        "noFollow": false,
+        "tagTitle": "shelfLink",
+        "text": "VER TODOS"
+      }
+    }
+  },
+  "menu-item#shelf-link2": {
+    "props": {
+      "blockClass": "shelfLink",
+      "id": "shelfLink2",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/masculino/roupas/camisetas",
+        "noFollow": false,
+        "tagTitle": "shelfLink",
+        "text": "VER TODOS"
+      }
+    }
+  },
+  "flex-layout.row#shelf1": {
+    "props": {
+      "blockClass": ["home-shelf-1"]
+    },
+    "children": ["flex-layout.col#shelf"],
+    "title": "Home - Prateleira 1"
+  },
+  "flex-layout.col#shelf": {
+    "children": ["list-context.product-list#demo1"],
+    "props": {
+      "width": "100%",
+      "horizontalAlign": "center"
+    },
+    "title": "Prateleira 1 - Prateleira"
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf#home"],
+    "children": ["slider-layout#demo-products1"],
+    "props": {
+      "orderBy": "OrderByReleaseDateDESC"
+    },
+    "title": "Prateleira 1 - Produtos"
+  },
+  "slider-layout#demo-products1": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "showPaginationDots": "never",
+      "showNavigationArrows": "desktopOnly"
+    },
+    "title": "Prateleira 1 - Slider"
+  },
+  "flex-layout.row#shelf-titlediv2": {
+		"children": ["flex-layout.row#shelf-title2"],
+		"props": {
+			"blockClass": ["shelf-titlediv2"]
+		},
+		"title": "Home - Prateleira 2 - Título"
+	},
+  "flex-layout.row#shelf-title2": {
+		"children": ["rich-text#shelf-title2", "menu-item#shelf-link2"],
+		"props": {
+			"blockClass": ["shelf-title"]
+		},
+		"title": "Home - Prateleira 2 - Título"
+	},
+  "rich-text#shelf-title2": {
+    "props": {
+      "text": "## Lançamentos",
+      "blockClass": "shelfTitle"
+    },
+    "title": "Prateleira 2 - Título"
+  },
+  "flex-layout.row#shelf2": {
+    "props": {
+      "blockClass": ["home-shelf-2"]
+    },
+    "children": ["flex-layout.col#shelf2"],
+    "title": "Home - Prateleira 2"
+  },
+  "flex-layout.col#shelf2": {
+    "children": ["list-context.product-list#demo2"],
+    "props": {
+      "width": "100%",
+      "horizontalAlign": "center"
+    },
+    "title": "Prateleira 1 - Prateleira"
+  },
+  "list-context.product-list#demo2": {
+    "blocks": ["product-summary.shelf#home"],
+    "children": ["slider-layout#demo-products2"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    },
+    "title": "Prateleira 2 - Produtos"
+  },
+  "slider-layout#demo-products2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "showPaginationDots": "never",
+      "showNavigationArrows": "desktopOnly"
+    },
+    "title": "Prateleira 2 - Slider"
+  }
+}

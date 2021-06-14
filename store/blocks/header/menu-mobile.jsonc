@@ -1,0 +1,11 @@
+{
+	"menu#header-mobile": {
+		"props": {
+			"blockClass": "drawer-all-content",
+			"orientation": "vertical"
+		},
+		"children": [
+			"vtex.menu@2.x:menu#category"
+		]
+	}
+}

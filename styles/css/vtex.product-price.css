@@ -1,0 +1,15 @@
+:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .currencyContainer--summary {
+  color: #f71963;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.currencyContainer--summary {
+  color: #f71963;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sellingPrice--summary {
+  color: #A1A8B3;
+}

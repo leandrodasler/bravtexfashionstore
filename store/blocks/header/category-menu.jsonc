@@ -1,0 +1,63 @@
+{
+	"vtex.menu@2.x:menu#category-menu": {
+		"props": {
+			"experimentalOptimizeRendering": true,
+			"items": [
+			{
+				"id": "menu-item-category-ofertas",
+				"type": "custom",
+				"blockClass": "category-menu",
+				"iconId": null,
+				"highlight": false,
+				"itemProps": {
+				"type": "internal",
+				"href": "/home---ofertas/",
+				"noFollow": false,
+				"tagTitle": "ofertas",
+				"text": "Ofertas"
+				}
+			},
+			{
+				"id": "menu-item-category-maisvendidos",
+				"type": "custom",
+				"blockClass": "category-maisvendidos",
+				"iconId": null,
+				"highlight": false,
+				"itemProps": {
+				"type": "internal",
+				"href": "/home---maisvendidos/",
+				"noFollow": false,
+				"tagTitle": "maisvendidos",
+				"text": "Mais Vendidos"
+				}
+			}
+			]
+		},
+		"children": []
+		}
+
+	// "menu-item#location": {
+	//   "props": {
+	//     "id": "menu-item-category-home",
+	//     "type": "custom",
+	//     "blockClass": "location-menu",
+	//     "iconId": null,
+	//     "highlight": false,
+	//     "itemProps": {
+	//       "type": "internal",
+	//       "href": "/apparel---accessories/",
+	//       "noFollow": false,
+	//       "tagTitle": "Enviado para",
+	//       "text": "Enviado para: São Paulo"
+	//     },
+	//     "iconProps": {
+	// 			"id": "pin-icon",
+	// 			"size": 25,
+	// 			"viewBox": "0 0 24 24",
+	// 			"activeClassName": "",
+	// 			"mutedClassName": ""
+	// 		},
+	// 		"iconToTheLeft": true
+	//   }
+	// }
+}
