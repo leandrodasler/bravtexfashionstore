@@ -336,6 +336,7 @@
 .flexRow--quantity-and-buy-btn-container :global(.vtex-button) {
 	white-space: nowrap;
 	min-height: 48px;
+	width: 400px !important;
 }
 .flexRow--quantity-and-buy-btn-container :global(.vtex-button):hover {
 	background-color: #F71963;
