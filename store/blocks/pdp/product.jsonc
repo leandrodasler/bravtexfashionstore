@@ -107,6 +107,7 @@
 		},
 		"children": ["flex-layout.row#product-name",
 			"flex-layout.row#price-and-add-to-cart",
+			"similar-product-selector",
 			"sku-selector",
 			"flex-layout.row#quantity-buy-button-custom-component"
 			]
