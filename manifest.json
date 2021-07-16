@@ -69,7 +69,8 @@
     "vtex.similar-product-selector": "0.x"
   },
   "peerDependencies": {
-    "vtex.location-availability": "0.x"
+    "vtex.location-availability": "0.x",
+    "vtex.wish-list": "1.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
