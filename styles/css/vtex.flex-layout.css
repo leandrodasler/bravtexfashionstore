@@ -301,9 +301,6 @@
 	border-bottom: 1px solid #E7E9EE;
 	height: 500px !important;
 }
-.flexCol--product-images-container {
-	max-width: 504px;
-}
 .flexRowContent--product-image-content {
 	justify-content: center;
 }
@@ -336,8 +333,14 @@
 .flexRow--quantity-and-buy-btn-container :global(.vtex-button) {
 	white-space: nowrap;
 	min-height: 48px;
-	width: 400px !important;
+	min-width: 400px !important;
 }
+.flexRow--quantity-and-buy-btn-container :global(.vtex-wish-list-1-x-wishlistIconContainer--pdp-wish-heart) :global(.vtex-button) {
+	white-space: nowrap;
+	min-height: 48px;
+	min-width: 40px !important;
+}
+
 .flexRow--quantity-and-buy-btn-container :global(.vtex-button):hover {
 	background-color: #F71963;
 }
