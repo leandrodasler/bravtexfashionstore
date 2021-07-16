@@ -18,7 +18,7 @@
 	"product-selling-price#summary": {
 		"props": {
 			"blockClass": "summary",
-			"message": "por {sellingPriceValue}"
+			"message": "{sellingPriceValue}"
 		}
 	},
 	"product-list-price#summary": {
@@ -44,6 +44,20 @@
 			"blockClass": "pdp-selling-and-list-price-container"
 		},
 		"children": ["product-list-price#summary", "product-selling-price#summary", "product-installments", "product-installments-list", "product-installments-list-item"]
+	},
+	"flex-layout.row#selling-and-list-price-shelf": {
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true,
+			"blockClass": "shelf-selling-and-list-price-container",
+			"fullWidth": true
+		},
+		"children": ["product-list-price#summary", "product-selling-price#summary", "product-installments"]
+	},
+	"product-installments": {
+		"props": {
+			"installmentsNumber": "6"
+		}
 	},
 	"flex-layout.col#selling-and-list-price": {
 		"props": {
