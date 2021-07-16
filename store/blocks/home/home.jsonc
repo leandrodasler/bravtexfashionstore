@@ -224,7 +224,7 @@
     "blocks": ["product-summary.shelf#home"],
     "children": ["slider-layout#demo-products1"],
     "props": {
-      "orderBy": "OrderByReleaseDateDESC"
+      "orderBy": "OrderByTopSaleDESC"
     },
     "title": "Prateleira 1 - Produtos"
   },
@@ -283,7 +283,7 @@
     "blocks": ["product-summary.shelf#home"],
     "children": ["slider-layout#demo-products2"],
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
+      "orderBy": "OrderByNameDESC"
     },
     "title": "Prateleira 2 - Produtos"
   },
