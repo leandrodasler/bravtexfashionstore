@@ -290,6 +290,10 @@
 	border-radius: 8px;
 }
 
+:global(.vtex-slider-0-x-dotsContainer) {
+	display: none;
+}
+
 :global(.vtex-rich-text-0-x-heading--pdp-shipping-text) {
 	margin: 0;
 }

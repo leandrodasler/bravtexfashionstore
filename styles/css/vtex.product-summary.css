@@ -74,9 +74,9 @@
 	margin-bottom: 0.5rem;
 }
 .productBrand--shelfName {
-	font-weight: 700;
-	font-size: 18px;
+	font-size: 20px;
 	line-height: 20px;
+	font-weight: normal;
 	color: #000000;
 }
 :global(.vtex-flex-layout-0-x-flexRow--shelf-pdp-container) .element .brandName {
