@@ -2,8 +2,8 @@
 	"product-summary.shelf#home": {
 		"children": [
 			"stack-layout#prodsum",
-			"product-summary-name",
-			"flex-layout.col#selling-and-list-price"
+			"flex-layout.row#shelfNameAndHeart",
+			"flex-layout.row#selling-and-list-price-shelf"
 		]
 	},
 
@@ -59,8 +59,8 @@
 	"product-summary.shelf#pdp-shelf": {
 		"children": [
 			"stack-layout#prodsum",
-			"product-summary-name",
-			"flex-layout.col#selling-and-list-price"
+			"flex-layout.row#shelfNameAndHeart",
+			"flex-layout.row#selling-and-list-price-shelf"
 		]
 	},
 	"flex-layout.row#add-btn-shelf-pdp-custom-component": {
@@ -85,5 +85,11 @@
 			"customPixelEventId": "add-to-cart-button",
 			"text": "ADICIONAR"
 		}
+	},
+	"add-to-list-btn#heart-pdp": {
+		"props": {
+			"blockClass": "pdp-wish-heart"
+		},
+		"title": "Botão de Favorito"
 	}
 }
