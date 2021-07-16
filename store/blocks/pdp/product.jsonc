@@ -37,7 +37,8 @@
 	"flex-layout.row#product-main": {
 		"props": {
 			"blockClass": "pdp-main-container",
-			"paddingBottom": 8
+			"paddingBottom": 8,
+			"colSizing": "auto"
 		},
 		"children": ["flex-layout.col#stack", "flex-layout.col#right-col"]
 	},
@@ -58,7 +59,6 @@
 	"flex-layout.col#stack": {
 		"children": ["stack-layout", "flex-layout.row#title-shelf-pdp-1", "flex-layout.row#shelf3"],
 		"props": {
-			"width": "50%",
 			"rowGap": 0,
 			"blockClass": "product-images-container"
 		},
@@ -128,9 +128,10 @@
 	},
 	"flex-layout.row#quantity-buy-button-custom-component": {
 		"props": {
-			"blockClass": "quantity-and-buy-btn-container"
+			"blockClass": "quantity-and-buy-btn-container",
+			"colSizing": "auto"
 		},
-		"children": ["add-to-cart-button#pdp"]
+		"children": ["add-to-list-btn#heart-pdp","add-to-cart-button#pdp"]
 	},
 	"add-to-cart-quantity-stepper#pdp": {
 		"blocks": ["add-to-cart-button#pdp"]
@@ -286,13 +287,14 @@
 			"blockClass": "pdp-wish-and-share-content",
 			"preventHorizontalStretch": true
 		},
-		"children": [/* "add-to-list-btn#heart-pdp", */ "share#custom"]
+		"children": [ "share#custom"]
 	},
 	"flex-layout.row#title-shelf-pdp-1": {
 		"props": {
-			"blockClass": "title-shelf-pdp-container"
+			"blockClass": "title-shelf-pdp-container",
+			"colSizing": "auto"
 		},
-		"children": ["rich-text#title-shelf-1"]
+		"children": ["rich-text#title-shelf-1", "menu-item#shelf-link1"]
 	},
 	"rich-text#title-shelf-1": {
 		"props": {
@@ -349,12 +351,26 @@
 		"title": "Home - Prateleira 1"
 	  },
 	  "flex-layout.col#shelfrelated": {
-		"children": ["list-context.product-list#demo3"],
+		"children": ["shelf.relatedProducts"],
 		"props": {
 		  "width": "100%",
 		  "horizontalAlign": "center"
 		},
 		"title": "Relacionados - Prateleira"
+	  },
+	  "shelf.relatedProducts": {
+		  "blocks": ["product-summary.shelf#pdp-shelf"],
+		  "props": {
+			"recommendation": "view",
+			"productList": {
+				"maxItems": 3,
+				"itemsPerPage": 3,
+				"arrows": false,
+				"showTitle": false,
+				"blockClass": "shelf",
+				"gap": "ph5"
+			}
+		  }
 	  },
 	  "list-context.product-list#demo3": {
 		"blocks": ["product-summary.shelf#home"],
