@@ -242,6 +242,7 @@
 }
 .headingLevel2--title-shelf-content {
 	margin: 16px 0;
+	padding-left: 1rem;
 }
 .container--payment-methods-text {
 	font-size: 14px;
@@ -501,4 +502,24 @@
 		min-width: 288px;
 		max-width: 100%;
 	}
+}
+
+.heading--pdp-more-colors {
+	margin: 0.75rem 0;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.paragraph--pdp-pickup-text-detail {
+	font-size: 14px;
+	color: #4A596B;
+}
+
+.container--pdp-pickup-text-detail {
+	width: 50%;
+	height: 100%;
+}
+
+.heading--pdp-pickup-text {
+	margin: 0;
 }
