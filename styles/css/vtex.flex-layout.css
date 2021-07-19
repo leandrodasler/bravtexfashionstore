@@ -1,6 +1,19 @@
 .flexRowContent--title-shelf-pdp-container {
 	position: relative;
 }
+.flexColChild--product-info-content .flexCol {
+	justify-content: space-between;
+}
+.flexColChild--pdp-selling-and-list-price-container :global(.vtex-product-price-1-x-installments) {
+	font-weight: 400;
+	font-size: 20px;
+	color: #A1A8B3;
+}
+.flexColChild--pdp-selling-and-list-price-container :global(.vtex-product-price-1-x-installmentsNumber),
+.flexColChild--pdp-selling-and-list-price-container :global(.vtex-product-price-1-x-installmentValue)  {
+	font-weight: 700;
+	color: #A1A8B3;
+}
 .flexRowContent--menu-link,
 .flexRowContent--main-header {
 	padding: 0 0.5rem;
