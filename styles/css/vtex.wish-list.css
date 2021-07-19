@@ -5,3 +5,7 @@
   position: absolute;
   background-repeat: no-repeat;
 }
+
+.wishlistIcon--pdp-wish-heart :global(.vtex-button):hover {
+  background-color: white !important;
+}
