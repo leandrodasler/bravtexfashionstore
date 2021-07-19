@@ -21,6 +21,12 @@
 			"message": "{sellingPriceValue}"
 		}
 	},
+	"product-selling-price#summary-pdp": {
+		"props": {
+			"blockClass": "summary",
+			"message": "por {sellingPriceValue}"
+		}
+	},
 	"product-list-price#summary": {
 		"props": {
 			"blockClass": "list-price",
@@ -43,7 +49,15 @@
 			"preventHorizontalStretch": true,
 			"blockClass": "pdp-selling-and-list-price-container"
 		},
-		"children": ["product-list-price#summary", "product-selling-price#summary", "product-installments", "product-installments-list", "product-installments-list-item"]
+		"children": ["flex-layout.col#selling-and-list-price"]
+	},
+	"flex-layout.col#selling-and-list-price": {
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true,
+			"blockClass": "pdp-selling-and-list-price-container"
+		},
+		"children": ["product-list-price#summary", "product-selling-price#summary-pdp", "product-installments"]
 	},
 	"flex-layout.row#selling-and-list-price-shelf": {
 		"props": {
@@ -58,14 +72,6 @@
 		"props": {
 			"installmentsNumber": "6"
 		}
-	},
-	"flex-layout.col#selling-and-list-price": {
-		"props": {
-			"preserveLayoutOnMobile": true,
-			"preventHorizontalStretch": true,
-			"blockClass": "pdp-selling-and-list-price-container"
-		},
-		"children": ["product-selling-price#summary"]
 	},
 	/* Futura Estrutura da PdP*/
 	"flex-layout.row#selling-and-list-price-new": {
