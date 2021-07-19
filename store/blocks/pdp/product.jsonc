@@ -94,6 +94,7 @@
 			
 			"flex-layout.col#product-info-pdp",
 			"rich-text#texto-entrega",
+			"rich-text#texto-pickup",
 			"disclosure-layout#pickup",
 			"rich-text#texto-cep",	
 			"flex-layout.col#shipping-product"
@@ -103,22 +104,41 @@
 	},
 	"flex-layout.col#product-info-pdp": {
 		"props": {
-			"horizontalAlign": "left"
+			"horizontalAlign": "left",
+			"preventVerticalStretch": true,
+			"blockClass": "product-info-pdp"
 		},
-		"children": ["flex-layout.row#product-name",
-			"flex-layout.row#price-and-add-to-cart",
-			"similar-product-selector",
+		"children": [
+			"flex-layout.col#product-info-name-and-price",
+			"flex-layout.col#product-selector",
 			"sku-selector",
 			"flex-layout.row#quantity-buy-button-custom-component"
 			]
+	},
+	"flex-layout.col#product-info-name-and-price": {
+		"props": {
+			"horizontalAlign": "left",
+			"preventVerticalStretch": true
+		},
+		"children": ["flex-layout.row#product-name",
+			"flex-layout.row#price-and-add-to-cart"
+			]
+	},
+	"flex-layout.col#product-selector": {
+		"props": {
+			"horizontalAlign": "left",
+			"preventVerticalStretch": true
+		},
+		"children": ["rich-text#mais-cores",	
+			"similar-product-selector"
+		]
 	},
 	"flex-layout.row#price-and-add-to-cart": {
 		"props": {
 			"blockClass": "price-and-add-to-cart",
 			"horizontalAlign": "center"
 		},
-		"children": ["flex-layout.row#selling-and-list-price"
-			]
+		"children": ["flex-layout.row#selling-and-list-price"]
 	},
 	"flex-layout.row#custom-add-to-cart-quantity-stepper": {
 		"props": {
@@ -150,11 +170,18 @@
 		},
 		"title": "PDP delivery text"
 	},
+	"rich-text#mais-cores": {
+		"props": {
+			"blockClass": "pdp-more-colors",
+			"text": "#### Mais cores"
+		},
+		"title": "PDP color selector text"
+	},
 	"disclosure-layout#pickup": {
 		"children": ["disclosure-trigger#pickup", "disclosure-content#pickup"]
 	},
 	"disclosure-trigger#pickup": {
-		"children": ["rich-text#texto-pickup", "disclosure-state-indicator#pickup"]
+		"children": ["rich-text#texto-pickup-detalhe", "disclosure-state-indicator#pickup"]
 	},
 	"disclosure-content#pickup": {
 		"children": ["location-context"]
@@ -174,6 +201,13 @@
 		"props": {
 			"blockClass": "pdp-pickup-text",
 			"text": "###### Retire na loja mais próxima"
+		},
+		"title": "PDP pickup text"
+	},
+	"rich-text#texto-pickup-detalhe": {
+		"props": {
+			"blockClass": "pdp-pickup-text-detail",
+			"text": "Confira a disponibilidade do seu tamanho em uma loja próxima."
 		},
 		"title": "PDP pickup text"
 	},
