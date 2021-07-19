@@ -57,6 +57,9 @@
 		}
 	},
 	"product-summary.shelf#pdp-shelf": {
+		"props": {
+			"blockClass": "pdp-shelf"
+		},
 		"children": [
 			"stack-layout#prodsum",
 			"flex-layout.row#shelfNameAndHeart",
