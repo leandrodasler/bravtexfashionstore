@@ -1,6 +1,6 @@
 {
 	"store.product": {
-		"children": ["responsive-layout.desktop#pdp"/* , "responsive-layout.tablet#pdp", "responsive-layout.phone#pdp" */]
+		"children": ["responsive-layout.desktop#pdp", "responsive-layout.tablet#pdp", "responsive-layout.phone#pdp"]
 	},
 	"responsive-layout.desktop#pdp": {
 		"children": [
@@ -188,7 +188,7 @@
 	},
 	"disclosure-state-indicator#pickup": {
 		"props": {
-		  "Show": "rich-text#button-pickup"
+		  "Show": "modal-trigger#example"
 		}
 	},
 	"rich-text#button-pickup": {
@@ -197,6 +197,46 @@
 			"text": "ESCOLHER LOJA"
 		}
 	},
+
+   "modal-trigger#example": {
+    "children": [
+		"rich-text#button-pickup",
+		"modal-layout#example"
+		
+    ]
+  },
+  "modal-layout#example": {
+    "children": [
+		"flex-layout.col#modal-content"
+    ]
+  },
+
+  "flex-layout.col#modal-content": {
+	"props": {
+		"blockClass": "pdp-modal-content"
+	},
+	"children": ["rich-text#modal-content-title", "rich-text#modal-content-subtitle", "flex-layout.col#modal-content-info"]
+  },
+  "rich-text#modal-content-title": {
+	"props": {
+		"blockClass": "pdp-modal-content-title",
+		"text": "Escolher loja"
+		}
+	},
+	"rich-text#modal-content-subtitle": {
+		"props": {
+			"blockClass": "pdp-modal-content-subtitle",
+			"text": "Confira a disponibilidade do seu tamanho em uma loja próxima. O frete é grátis!"
+		}
+	},
+	"flex-layout.col#modal-content-info": {
+		"props": {
+			"blockClass": "pdp-modal-content-info"
+		},
+		"children": ["flex-layout.row#product-name", "product-images", "sku-selector", "rich-text#texto-cep", "flex-layout.col#shipping-product"]
+	},
+
+
 	"rich-text#texto-pickup": {
 		"props": {
 			"blockClass": "pdp-pickup-text",
