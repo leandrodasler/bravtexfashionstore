@@ -120,12 +120,13 @@
 			"width": "150"
 		}
 	},
+
+	
 	/*Header Mobile*/
 	"header-layout.mobile": {
 		"children": [
 			"flex-layout.row#1-mobile",
 			"sticky-layout#1-mobile",
-			"sticky-layout#1-tablet",
 			"flex-layout.row#3-mobile"
 		],
 		"title": "Header - Mobile"

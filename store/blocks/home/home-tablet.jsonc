@@ -1,0 +1,13 @@
+{
+	"responsive-layout.tablet#home": {
+		"children": [
+			"flex-layout.row#home-banners",
+      		"flex-layout.row#shelf-titlediv1responsive",
+      		"flex-layout.row#shelf1",
+      		"flex-layout.row#shelf-titlediv2responsive",
+      		"flex-layout.row#shelf2",
+      		"flex-layout.row#info-cards"
+		],
+		"title": "Home - Tablet"
+	}
+}
