@@ -1,6 +1,6 @@
 {
   "store.home": {
-    "blocks": ["responsive-layout.desktop#home"]
+    "blocks": ["responsive-layout.desktop#home", "responsive-layout.desktop#home", "responsive-layout.tablet#home", "responsive-layout.phone#home"]
   },
   "responsive-layout.desktop#home": {
     "children": [
@@ -209,10 +209,10 @@
     "props": {
       "blockClass": ["home-shelf-1"]
     },
-    "children": ["flex-layout.col#shelf"],
+    "children": ["flex-layout.col#shelf1"],
     "title": "Home - Prateleira 1"
   },
-  "flex-layout.col#shelf": {
+  "flex-layout.col#shelf1": {
     "children": ["list-context.product-list#demo1"],
     "props": {
       "width": "100%",
@@ -231,12 +231,12 @@
   "slider-layout#demo-products1": {
     "props": {
       "itemsPerPage": {
-        "desktop": 3,
+        "desktop": 4,
         "tablet": 2,
         "phone": 2
       },
       "infinite": true,
-      "fullWidth": false,
+      "fullWidth": true,
       "blockClass": "shelf",
       "showPaginationDots": "never",
       "showNavigationArrows": "desktopOnly"
@@ -274,6 +274,7 @@
   "flex-layout.col#shelf2": {
     "children": ["list-context.product-list#demo2"],
     "props": {
+      "blockClass": "shelf2",
       "width": "100%",
       "horizontalAlign": "center"
     },
@@ -290,12 +291,12 @@
   "slider-layout#demo-products2": {
     "props": {
       "itemsPerPage": {
-        "desktop": 3,
+        "desktop": 4,
         "tablet": 2,
         "phone": 2
       },
       "infinite": true,
-      "fullWidth": false,
+      "fullWidth": true,
       "blockClass": "shelf",
       "showPaginationDots": "never",
       "showNavigationArrows": "desktopOnly"
