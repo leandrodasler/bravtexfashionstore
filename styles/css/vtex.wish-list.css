@@ -9,3 +9,9 @@
 .wishlistIcon--pdp-wish-heart :global(.vtex-button):hover {
   background-color: white !important;
 }
+
+@media (max-width: 1024px) { 
+  .wishlistIconContainer--pdp-wish-heart {
+    display: none;
+  }
+}
