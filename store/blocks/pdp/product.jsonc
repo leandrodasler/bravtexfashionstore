@@ -188,7 +188,7 @@
 	},
 	"disclosure-state-indicator#pickup": {
 		"props": {
-		  "Show": "modal-trigger#example"
+		  "Show": "rich-text#button-pickup"
 		}
 	},
 	"rich-text#button-pickup": {
@@ -233,7 +233,7 @@
 		"props": {
 			"blockClass": "pdp-modal-content-info"
 		},
-		"children": ["flex-layout.row#product-name", "product-images", "sku-selector", "rich-text#texto-cep", "flex-layout.col#shipping-product"]
+		"children": ["flex-layout.row#product-name", "product-images", "sku-selector"]
 	},
 
 

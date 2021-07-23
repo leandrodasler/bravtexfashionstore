@@ -94,6 +94,14 @@
 .flexColChild--shelf2 {
 	width: 100%;
 }
+.flexCol--pdp-modal-content {
+	width: 65vw;
+	height: 80vh;
+}
+
+.flexCol--pdp-modal-content :global(.vtex-store-components-3-x-productImageTag) {
+	width: 210px;
+}
 @media only screen and (max-width: 1025px) {
 	.flexRow--home-shelf-1 :global(.vtex-store-components-3-x-container),
 	.flexRow--home-shelf-2 :global(.vtex-store-components-3-x-container) {
