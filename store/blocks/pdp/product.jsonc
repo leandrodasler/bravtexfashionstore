@@ -94,9 +94,7 @@
 			
 			"flex-layout.col#product-info-pdp",
 			"rich-text#texto-entrega",
-			"rich-text#texto-pickup",
-			"disclosure-layout#pickup",
-			"rich-text#texto-cep",	
+			"rich-text#texto-cep",
 			"flex-layout.col#shipping-product"
 			
 		],
@@ -159,14 +157,14 @@
 	"rich-text#texto-entrega": {
 		"props": {
 			"blockClass": "pdp-delivery-text-title",
-			"text": "### Opções de entrega"
+			"text": "### Opções de entrega ou retirada"
 		},
 		"title": "PDP delivery text"
 	},
 	"rich-text#texto-cep": {
 		"props": {
 			"blockClass": "pdp-shipping-text",
-			"text": "###### Receba em casa"
+			"text": "###### Informe seu CEP"
 		},
 		"title": "PDP delivery text"
 	},
@@ -177,107 +175,10 @@
 		},
 		"title": "PDP color selector text"
 	},
-	"disclosure-layout#pickup": {
-		"children": ["disclosure-trigger#pickup", "disclosure-content#pickup"]
-	},
-	"disclosure-trigger#pickup": {
-		"children": ["rich-text#texto-pickup-detalhe", "disclosure-state-indicator#pickup"]
-	},
-	"disclosure-content#pickup": {
-		"children": ["location-context"]
-	},
-	"disclosure-state-indicator#pickup": {
-		"props": {
-		  "Show": "rich-text#button-pickup"
-		}
-	},
-	"rich-text#button-pickup": {
-		"props": {
-			"blockClass": "pdp-pickup-button-text",
-			"text": "ESCOLHER LOJA"
-		}
-	},
-
-   "modal-trigger#example": {
-    "children": [
-		"rich-text#button-pickup",
-		"modal-layout#example"
-		
-    ]
-  },
-  "modal-layout#example": {
-    "children": [
-		"flex-layout.col#modal-content"
-    ]
-  },
-
-  "flex-layout.col#modal-content": {
-	"props": {
-		"blockClass": "pdp-modal-content"
-	},
-	"children": ["rich-text#modal-content-title", "rich-text#modal-content-subtitle", "flex-layout.col#modal-content-info"]
-  },
-  "rich-text#modal-content-title": {
-	"props": {
-		"blockClass": "pdp-modal-content-title",
-		"text": "Escolher loja"
-		}
-	},
-	"rich-text#modal-content-subtitle": {
-		"props": {
-			"blockClass": "pdp-modal-content-subtitle",
-			"text": "Confira a disponibilidade do seu tamanho em uma loja próxima. O frete é grátis!"
-		}
-	},
-	"flex-layout.col#modal-content-info": {
-		"props": {
-			"blockClass": "pdp-modal-content-info"
-		},
-		"children": ["flex-layout.row#product-name", "product-images", "sku-selector"]
-	},
-
-
-	"rich-text#texto-pickup": {
-		"props": {
-			"blockClass": "pdp-pickup-text",
-			"text": "###### Retire na loja mais próxima"
-		},
-		"title": "PDP pickup text"
-	},
-	"rich-text#texto-pickup-detalhe": {
-		"props": {
-			"blockClass": "pdp-pickup-text-detail",
-			"text": "Confira a disponibilidade do seu tamanho em uma loja próxima."
-		},
-		"title": "PDP pickup text"
-	},
-	"location-context": {
-		"children": [
-			"product-location-availability-header",
-			"flex-layout.row#location-availability"
-		]
-	},
-	"flex-layout.row#location-availability": {
-		"children": [
-			"product-location-pickup-options"
-		]
-	},
-	"product-location-availability-header": {
-		"props": {
-			"styleAsLink": false
-		}
-	},
 	"flex-layout.col#shipping-product": {
 		"children": [
 		  "shipping-simulator"
 		]
-	  },
-	"rich-text#choose-store": {
-		"props": {
-			"blockClass": "pdp-delivery-text",
-			"text": "### Opções de entrega"
-		},
-		"title": "PDP delivery text"
 	},
 	"flex-layout.row#product-brand": {
 		"props": {

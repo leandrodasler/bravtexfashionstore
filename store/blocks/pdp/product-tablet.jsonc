@@ -35,9 +35,7 @@
 		"children": [
 			"flex-layout.col#product-info-pdp",
 			"rich-text#texto-entrega",
-			"rich-text#texto-pickup",
-			"disclosure-layout#pickup",
-			"rich-text#texto-cep",	
+			"rich-text#texto-cep",
 			"flex-layout.col#shipping-product"
 		],
 		"title": "Informações do Produto"
