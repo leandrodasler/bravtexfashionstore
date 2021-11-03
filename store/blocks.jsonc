@@ -8,11 +8,11 @@
  * blocks, or if the app is simple enough that it doesn't warrant splitting the file.
  */
 {
-	/* "store.orderplaced": {
+	"store.orderplaced": {
 		"blocks": ["order-placed"]
 	},
 
-	"store.account": {
+	/*"store.account": {
 		"blocks": ["my-account"],
 		"parent": {
 			"challenge": "challenge.profile"
