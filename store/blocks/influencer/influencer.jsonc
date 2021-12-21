@@ -56,7 +56,8 @@
   "flex-layout.row#influencer-shelf-title1": {
 		"children": ["rich-text#influencer-shelf-title1", "menu-item#influencer-shelf-link1"],
 		"props": {
-			"blockClass": ["shelf-title"]
+			"blockClass": ["shelf-title"],
+      "colSizing": "auto"
 		},
 		"title": "Influencer - Prateleira 1 - Título"
 	},
@@ -146,7 +147,8 @@
   "flex-layout.row#influencer-shelf-title2": {
 		"children": ["rich-text#influencer-shelf-title2", "menu-item#influencer-shelf-link2"],
 		"props": {
-			"blockClass": ["shelf-title"]
+			"blockClass": ["shelf-title"],
+      "colSizing": "auto"
 		},
 		"title": "Influencer - Prateleira 2 - Título"
 	},

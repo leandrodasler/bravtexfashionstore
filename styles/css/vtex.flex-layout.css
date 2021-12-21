@@ -178,7 +178,8 @@
 	width: 50px !important;
 }
 .flexRowContent--shelf-title {
-	max-width: 400px;
+	/* max-width: 400px; */
+	justify-content: flex-start;
 }
 .flexRowContent--shelf-titlediv1,
 .flexRowContent--shelf-titlediv2 {

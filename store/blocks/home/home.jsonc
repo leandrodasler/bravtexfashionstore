@@ -164,7 +164,8 @@
   "flex-layout.row#shelf-title1": {
 		"children": ["rich-text#shelf-title1", "menu-item#shelf-link1"],
 		"props": {
-			"blockClass": ["shelf-title"]
+			"blockClass": ["shelf-title"],
+      "colSizing": "auto"
 		},
 		"title": "Home - Prateleira 1 - Título"
 	},
@@ -262,7 +263,8 @@
   "flex-layout.row#shelf-title2": {
 		"children": ["rich-text#shelf-title2", "menu-item#shelf-link2"],
 		"props": {
-			"blockClass": ["shelf-title"]
+			"blockClass": ["shelf-title"],
+      "colSizing": "auto"
 		},
 		"title": "Home - Prateleira 2 - Título"
 	},
