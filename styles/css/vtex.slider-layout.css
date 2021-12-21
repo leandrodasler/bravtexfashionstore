@@ -1,5 +1,6 @@
 .sliderLayoutContainer {
 	justify-content: center;
+	max-width: 80vw;
 }
 .sliderLayoutContainer--carousel {
 	background-color: #fff;
