@@ -1,0 +1,7 @@
+{
+  "list-products-collection-order": {
+    "allowed": ["product-summary"],
+    "composition": "children",
+    "component": "ListProductsCollectionOrder"
+  }
+}
