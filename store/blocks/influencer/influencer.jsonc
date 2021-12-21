@@ -1,0 +1,199 @@
+{
+  "store.custom#influencer": {
+    // "blocks": ["responsive-layout.desktop#influencer"/* , "responsive-layout.tablet#influencer", "responsive-layout.phone#influencer" */]
+    "children": [
+      "flex-layout.row#influencer-banners",
+      "flex-layout.row#influencer-shelf-titlediv1",
+      "flex-layout.row#influencer-shelf1",
+      "flex-layout.row#influencer-shelf-titlediv2",
+      "flex-layout.row#influencer-shelf2",
+      "flex-layout.row#info-cards"
+    ],
+    "title": "Influencer - Desktop"
+  },
+  // "responsive-layout.desktop#influencer": {
+  //   "children": [
+  //     "flex-layout.row#influencer-banners",
+  //     "flex-layout.row#influencer-shelf-titlediv1",
+  //     "flex-layout.row#influencer-shelf1",
+  //     "flex-layout.row#influencer-shelf-titlediv2",
+  //     "flex-layout.row#influencer-shelf2",
+  //     "flex-layout.row#info-cards"
+  //   ],
+  //   "title": "Influencer - Desktop"
+  // },
+  "flex-layout.row#influencer-banners": {
+    "children": ["flex-layout.col#influencer-banners"],
+    "title": "Influencer - Banners"
+  },
+  "flex-layout.col#influencer-banners": {
+    "children": ["image#influencer-banner-1", "image#influencer-banner-2"],
+    "props": {
+      "blockClass": "homeBanners"
+    }
+  },
+  "image#influencer-banner-1": {
+    "props": {
+      "src": "https://bravtexfashionstore.vtexassets.com/arquivos/shine.png",
+      "maxWidth": "100%"
+    },
+    "title": "Influencer - Banner 1"
+  },
+  "image#influencer-banner-2": {
+    "props": {
+      "src": "https://bravtexfashionstore.vtexassets.com/arquivos/outunoinverno.png",
+      "maxWidth": "100%"
+    },
+    "title": "Influencer - Banner 2"
+  },
+  "flex-layout.row#influencer-shelf-titlediv1": {
+		"children": ["flex-layout.row#influencer-shelf-title1"],
+		"props": {
+			"blockClass": ["shelf-titlediv1"]
+		},
+		"title": "Influencer - Prateleira 1 - Título"
+	},
+  "flex-layout.row#influencer-shelf-title1": {
+		"children": ["rich-text#influencer-shelf-title1", "menu-item#influencer-shelf-link1"],
+		"props": {
+			"blockClass": ["shelf-title"]
+		},
+		"title": "Influencer - Prateleira 1 - Título"
+	},
+  "rich-text#influencer-shelf-title1": {
+    "props": {
+      "text": "## Lançamentos",
+      "blockClass": "shelfTitle"
+    },
+    "title": "Prateleira 1 - Título"
+  },
+  "menu-item#influencer-shelf-link1": {
+    "props": {
+      "blockClass": "shelfLink",
+      "id": "shelfLink1",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/masculino/roupas/camisetas",
+        "noFollow": false,
+        "tagTitle": "shelfLink",
+        "text": "VER TODOS"
+      }
+    }
+  },
+  "menu-item#influencer-shelf-link2": {
+    "props": {
+      "blockClass": "shelfLink",
+      "id": "shelfLink2",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/masculino/roupas/camisetas",
+        "noFollow": false,
+        "tagTitle": "shelfLink",
+        "text": "VER TODOS"
+      }
+    }
+  },
+  "flex-layout.row#influencer-shelf1": {
+    "props": {
+      "blockClass": ["home-shelf-1"]
+    },
+    "children": ["flex-layout.col#influencer-shelf1"],
+    "title": "Influencer - Prateleira 1"
+  },
+  "flex-layout.col#influencer-shelf1": {
+    "children": ["list-products-collection-order#influencer-shelf-1"],
+    "props": {
+      "blockClass": "shelf2",
+      "width": "100%",
+      "horizontalAlign": "center"
+    },
+    "title": "Prateleira 1 - Prateleira"
+  },
+  "list-products-collection-order#influencer-shelf-1": {
+    "title": "Prateleira 1 - Coleção ordenada",
+    "blocks": ["product-summary.shelf#home"],
+    "children": ["slider-layout#influencer-demo-products1"],
+    "props": {
+      "collection": "141"
+    }
+  },
+  "slider-layout#influencer-demo-products1": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf",
+      "showPaginationDots": "never",
+      "showNavigationArrows": "desktopOnly"
+    },
+    "title": "Prateleira 1 - Slider"
+  },
+  "flex-layout.row#influencer-shelf-titlediv2": {
+		"children": ["flex-layout.row#influencer-shelf-title2"],
+		"props": {
+			"blockClass": ["shelf-titlediv2"]
+		},
+		"title": "Influencer - Prateleira 2 - Título"
+	},
+  "flex-layout.row#influencer-shelf-title2": {
+		"children": ["rich-text#influencer-shelf-title2", "menu-item#influencer-shelf-link2"],
+		"props": {
+			"blockClass": ["shelf-title"]
+		},
+		"title": "Influencer - Prateleira 2 - Título"
+	},
+  "rich-text#influencer-shelf-title2": {
+    "props": {
+      "text": "## Lançamentos",
+      "blockClass": "shelfTitle"
+    },
+    "title": "Prateleira 2 - Título"
+  },
+  "flex-layout.row#influencer-shelf2": {
+    "props": {
+      "blockClass": ["home-shelf-2"]
+    },
+    "children": ["flex-layout.col#influencer-shelf2"],
+    "title": "Influencer - Prateleira 2"
+  },
+  "flex-layout.col#influencer-shelf2": {
+    "children": ["list-products-collection-order#influencer-shelf-2"],
+    "props": {
+      "blockClass": "shelf2",
+      "width": "100%",
+      "horizontalAlign": "center"
+    },
+    "title": "Prateleira 2 - Prateleira"
+  },
+  "list-products-collection-order#influencer-shelf-2": {
+    "title": "Prateleira 2 - Coleção ordenada",
+    "blocks": ["product-summary.shelf#home"],
+    "children": ["slider-layout#influencer-demo-products2"],
+    "props": {
+      "collection": "142"
+    }
+  },
+  "slider-layout#influencer-demo-products2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf",
+      "showPaginationDots": "never",
+      "showNavigationArrows": "desktopOnly"
+    },
+    "title": "Prateleira 2 - Slider"
+  }
+}
