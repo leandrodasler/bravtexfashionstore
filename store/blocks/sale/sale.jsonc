@@ -1,0 +1,71 @@
+{
+  "store.custom#sale": {
+    "children": ["flex-layout.row#sale-banners"],
+    "title": "Página Promoções"
+  },
+  "flex-layout.row#sale-banners": {
+    "children": ["flex-layout.col#sale-banners"],
+    "props": {
+      "marginTop": 8,
+      "marginBottom": 8,
+      "rowGap": 8
+    },
+    "title": "Promoções - Banners"
+  },
+  "flex-layout.col#sale-banners": {
+    "children": ["image#sale-banner-1", "image#sale-banner-2", "image#sale-banner-3", "image#sale-banner-4", "image#sale-banner-5"],
+    "props": {
+      "blockClass": "homeBanners"
+    }
+  },
+  "image#sale-banner-1": {
+    "props": {
+      "src": "assets/banners/banner-1.png",
+      "link": {
+        "url": "#banner1"
+      },
+      "maxWidth": "100%"
+    },
+    "title": "Promoções - Banner 1"
+  },
+  "image#sale-banner-2": {
+    "props": {
+      "src": "assets/banners/banner-2.png",
+      "link": {
+        "url": "#banner2"
+      },
+      "maxWidth": "100%"
+    },
+    "title": "Promoções - Banner 2"
+  },
+  "image#sale-banner-3": {
+    "props": {
+      "src": "assets/banners/banner-3.png",
+      "link": {
+        "url": "#banner3"
+      },
+      "maxWidth": "100%"
+    },
+    "title": "Promoções - Banner 3"
+  },
+  "image#sale-banner-4": {
+    "props": {
+      "src": "assets/banners/banner-4.png",
+      "link": {
+        "url": "#banner4"
+      },
+      "maxWidth": "100%"
+    },
+    "title": "Promoções - Banner 4"
+  },
+  "image#sale-banner-5": {
+    "props": {
+      "src": "assets/banners/banner-5.png",
+      "link": {
+        "url": "#banner5"
+      },
+      "maxWidth": "100%"
+    },
+    "title": "Promoções - Banner 5"
+  }
+}

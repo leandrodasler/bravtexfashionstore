@@ -483,7 +483,8 @@
 	margin-bottom: 5rem;
 }
 .flexCol--infoCard, 
-.flexCol--infoCardFidelidade {
+.flexCol--infoCardFidelidade,
+.flexCol--infoCardInfluencer {
 	max-width: 360px;
 	height: 450px;
 	background-color: #F8F7FC;
@@ -492,12 +493,14 @@
 }
 @media only screen and (max-width: 1025px) {
 	.flexCol--infoCard, 
-	.flexCol--infoCardFidelidade {
-	max-width: 80vw;
+	.flexCol--infoCardFidelidade,
+	.flexCol--infoCardInfluencer {
+		max-width: 80vw;
 		margin-bottom: 1rem;
+	}
 }
-}
-.flexColChild--infoCard {
+.flexColChild--infoCard,
+.flexColChild--infoCardInfluencer {
 	height: auto !important;
 }
 .flexCol--infoCard::before {

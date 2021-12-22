@@ -7,8 +7,12 @@
 .paragraph--dontmissglobaltitle {
 	font-size: 40px;
 }
-.paragraph--dontmissTitle{
+.paragraph--dontmissTitle {
 	font-size: 28px;
+}
+.link--dontmissTitle {
+	color: #142032;
+	text-decoration: none;
 }
 .paragraph--dontmissfidelidade {
 	margin-left: 1.5rem;
