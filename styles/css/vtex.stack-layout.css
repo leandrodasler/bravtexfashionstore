@@ -1,0 +1,4 @@
+:global(.vtex-product-summary-2-x-container) .stackItem:not(.stackItem--first) {
+  left: auto;
+  right: 0;
+}
