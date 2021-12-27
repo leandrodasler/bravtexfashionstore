@@ -240,7 +240,7 @@
       "muted-5": "#3f3f40"
     },
     "hover-on": {
-      "action-primary": "#ffffff",
+      "action-primary": "#f71963",
       "action-secondary": "#f71963",
       "emphasis": "#ffffff",
       "success": "#ffffff",

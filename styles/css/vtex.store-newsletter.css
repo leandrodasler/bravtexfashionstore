@@ -23,11 +23,6 @@
 	display: flex;
 	align-items: center;
 }
-.formSubmitContainer :global(.vtex-button) {
-	background: #F71963;
-	border-color: #F71963;
-	font-weight: 700;
-}
 .phoneInputContainer :global(.vtex-input-prefix__group) {
 	margin: 0 8px;
 }

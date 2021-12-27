@@ -376,10 +376,6 @@
 	min-height: 48px;
 	min-width: 40px !important;
 }
-
-.flexRow--quantity-and-buy-btn-container :global(.vtex-button):hover {
-	background-color: #F71963;
-}
 .flexRowContent--product-payment-methods-and-shipping-container {
 	align-items: center;
 }
