@@ -1,43 +1,38 @@
 {
-	"responsive-layout.tablet#pdp": {
-		"children": [
-			"flex-layout.row#product-main-tablet",
-			"flex-layout.row#shelf-pdp-1"
-		],
-		"title": "PdP - Tablet"
-	},
-	"flex-layout.row#product-main-tablet": {
-		"props": {
-			"blockClass": "pdp-main-container",
-			"paddingBottom": 8,
-			"preserveLayoutOnMobile": true,
-			"preventHorizontalStretch": true,
-			"preventVerticalStretch": true
-		},
-		"children": ["flex-layout.col#stack-tablet", "flex-layout.col#right-col-tablet"]
-	},
-	"flex-layout.col#stack-tablet": {
-		"children": ["stack-layout"],
-		"props": {
-			"preventVerticalStretch": true,
-			"preventHorizontalStretch": true,
-			"rowGap": 0,
-			"blockClass": "product-images-container"
-		},
-		"title": "Imagem - Produto"
-	},
-	"flex-layout.col#right-col-tablet": {
-		"props": {
-			"preventVerticalStretch": true,
-			"preventHorizontalStretch": true,
-			"blockClass": "product-info-content"
-		},
-		"children": [
-			"flex-layout.col#product-info-pdp",
-			"rich-text#texto-entrega",
-			"rich-text#texto-cep",
-			"flex-layout.col#shipping-product"
-		],
-		"title": "Informações do Produto"
-	}
+  "responsive-layout.tablet#pdp": {
+    "children": ["kitlook-layout#tablet"],
+    "title": "PdP - Tablet"
+  },
+  "kitlook-layout#tablet": {
+    "children": ["flex-layout.row#product-main-tablet", "flex-layout.row#shelf-pdp-1"]
+  },
+  "flex-layout.row#product-main-tablet": {
+    "props": {
+      "blockClass": "pdp-main-container",
+      "paddingBottom": 8,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children": ["flex-layout.col#stack-tablet", "flex-layout.col#right-col-tablet"]
+  },
+  "flex-layout.col#stack-tablet": {
+    "children": ["stack-layout"],
+    "props": {
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "rowGap": 0,
+      "blockClass": "product-images-container"
+    },
+    "title": "Imagem - Produto"
+  },
+  "flex-layout.col#right-col-tablet": {
+    "props": {
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "product-info-content"
+    },
+    "children": ["flex-layout.col#product-info-pdp", "rich-text#texto-entrega", "rich-text#texto-cep", "flex-layout.col#shipping-product"],
+    "title": "Informações do Produto"
+  }
 }
