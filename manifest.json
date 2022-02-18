@@ -89,7 +89,7 @@
   "peerDependencies": {
     "vtex.wish-list": "1.x",
     "vtex.store-locator": "0.x",
-    "vtexbr.kitlook": "3.x"
+    "vtexbr.kitlook": "5.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
