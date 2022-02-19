@@ -18,7 +18,7 @@
       "paddingTop": 7,
       "paddingBottom": 7
     },
-    "children": ["stack-layout", "flex-layout.col#kitlook"]
+    "children": ["stack-layout", "flex-layout.col#kitlook", "rich-text#texto-entrega", "rich-text#texto-cep", "flex-layout.col#shipping-product"]
   },
   "flex-layout.col#kitlook": {
     "props": {
