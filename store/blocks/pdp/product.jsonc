@@ -10,6 +10,7 @@
   },
   "flex-layout.row#kitlook": {
     "props": {
+      "blockClass": "pdp-main-container",
       "colGap": 7,
       "rowGap": 7,
       "marginTop": 4,
@@ -17,7 +18,7 @@
       "paddingTop": 7,
       "paddingBottom": 7
     },
-    "children": ["flex-layout.col#stack", "flex-layout.col#kitlook"]
+    "children": ["stack-layout", "flex-layout.col#kitlook"]
   },
   "flex-layout.col#kitlook": {
     "props": {
