@@ -1,10 +1,7 @@
 {
   "responsive-layout.phone#pdp": {
-    "children": ["kitlook-layout#phone"],
+    "children": ["flex-layout.row#product-main-mobile", "flex-layout.row#shelf-pdp-1"],
     "title": "PdP - Phone"
-  },
-  "kitlook-layout#phone": {
-    "children": ["flex-layout.row#product-main-mobile", "flex-layout.row#shelf-pdp-1"]
   },
   "flex-layout.row#product-main-mobile": {
     "props": {
