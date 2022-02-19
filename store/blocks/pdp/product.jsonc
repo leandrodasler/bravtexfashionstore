@@ -1,13 +1,12 @@
 {
   "store.product.kitlook": {
-    "children": ["responsive-layout.desktop#pdp", "responsive-layout.tablet#pdp", "responsive-layout.phone#pdp"]
+    "children": ["kitlook-layout"]
   },
-  "responsive-layout.desktop#pdp": {
-    "children": ["kitlook-layout#desktop"],
-    "title": "PdP - Desktop"
-  },
-  "kitlook-layout#desktop": {
-    "children": ["flex-layout.row#product-main", "flex-layout.row#kitlook"]
+  "kitlook-layout": {
+    "children": [
+      "flex-layout.row#product-main", // <--- The first child is for regular product
+      "flex-layout.row#kitlook" // <--- The second one will show when a product is a kit
+    ]
   },
   "flex-layout.row#kitlook": {
     "props": {
@@ -18,7 +17,7 @@
       "paddingTop": 7,
       "paddingBottom": 7
     },
-    "children": ["flex-layout.col#kitlook", "flex-layout.col#stack"]
+    "children": ["flex-layout.col#stack", "flex-layout.col#kitlook"]
   },
   "flex-layout.col#kitlook": {
     "props": {
@@ -30,6 +29,10 @@
       "paddingBottom": 7
     },
     "children": ["kitlook"]
+  },
+  "responsive-layout.desktop#pdp": {
+    "children": ["flex-layout.row#product-main"],
+    "title": "PdP - Desktop"
   },
   "flex-layout.row#specifications-title": {
     "children": ["rich-text#specifications"]

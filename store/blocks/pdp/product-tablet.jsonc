@@ -1,10 +1,7 @@
 {
   "responsive-layout.tablet#pdp": {
-    "children": ["kitlook-layout#tablet"],
+    "children": ["flex-layout.row#product-main-tablet", "flex-layout.row#shelf-pdp-1"],
     "title": "PdP - Tablet"
-  },
-  "kitlook-layout#tablet": {
-    "children": ["flex-layout.row#product-main-tablet", "flex-layout.row#shelf-pdp-1"]
   },
   "flex-layout.row#product-main-tablet": {
     "props": {
