@@ -29,7 +29,7 @@
       "paddingTop": 7,
       "paddingBottom": 7
     },
-    "children": ["kitlook", "rich-text#texto-entrega", "rich-text#texto-cep", "flex-layout.col#shipping-product"]
+    "children": ["flex-layout.row#product-name", "kitlook", "rich-text#texto-entrega", "rich-text#texto-cep", "flex-layout.col#shipping-product"]
   },
   "responsive-layout.desktop#pdp": {
     "children": ["flex-layout.row#product-main"],
