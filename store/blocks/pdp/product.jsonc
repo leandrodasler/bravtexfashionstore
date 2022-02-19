@@ -18,7 +18,7 @@
       "paddingTop": 7,
       "paddingBottom": 7
     },
-    "children": ["stack-layout", "flex-layout.col#kitlook", "rich-text#texto-entrega", "rich-text#texto-cep", "flex-layout.col#shipping-product"]
+    "children": ["stack-layout", "flex-layout.col#kitlook"]
   },
   "flex-layout.col#kitlook": {
     "props": {
@@ -29,7 +29,7 @@
       "paddingTop": 7,
       "paddingBottom": 7
     },
-    "children": ["kitlook"]
+    "children": ["kitlook", "rich-text#texto-entrega", "rich-text#texto-cep", "flex-layout.col#shipping-product"]
   },
   "responsive-layout.desktop#pdp": {
     "children": ["flex-layout.row#product-main"],
