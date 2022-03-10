@@ -6,9 +6,28 @@
 		"blocks": ["header-layout.desktop", "header-layout.mobile"],
 		"title": "Header"
 	},
+	"flex-layout.row#demo-store-warning": {
+		"props": {
+			"blockClass": "demo-store-warning",
+			"fullWidth": true
+		},
+		"children": ["flex-layout.col#demo-store-warning"]
+	},
+	"flex-layout.col#demo-store-warning": {
+		"children": ["rich-text#demo-store-warning"]
+	},
+	"rich-text#demo-store-warning": {
+		"props": {
+			"text": "Atenção! Esta é uma loja de demonstração da plataforma VTEX. Os produtos, preços e entregas são meramente ilustrativos.",
+			"textPosition": "CENTER",
+			"textColor": "c-emphasis",
+			"blockClass": "demo-store-warning"
+		}
+	},
 	/*Header Desktop*/
 	"header-layout.desktop": {
 		"children": [
+			"flex-layout.row#demo-store-warning",
 			"sticky-layout#3-desktop",
 			"flex-layout.row#4-desktop"
 		],
@@ -125,6 +144,7 @@
 	/*Header Mobile*/
 	"header-layout.mobile": {
 		"children": [
+			"flex-layout.row#demo-store-warning",
 			"flex-layout.row#1-mobile",
 			"sticky-layout#1-mobile",
 			"flex-layout.row#3-mobile"
