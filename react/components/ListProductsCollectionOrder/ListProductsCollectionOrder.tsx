@@ -178,7 +178,7 @@ const ListProductsCollectionOrder = (props: PropsWithChildren<Props>) => {
 
   useEffect(() => {
     if (orderBy === ORDER_BY_OPTIONS.COLLECTION.value) {
-      fetch(`/api/catalog/pvt/collection/${collection}/products?Active=true&Visible=true`, {
+      fetch(`/_v/kollection/${collection}`, {
         headers: { "Content-Type": "application/json" },
         credentials: "same-origin",
       })
