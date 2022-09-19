@@ -36,11 +36,50 @@
     },
     "blocks": [
       // "search-result-layout.desktop",
-      "search-result-layout.desktop#search-page",
+      "search-result-layout.desktop#affiliates",
       // "search-result-layout.mobile",
       "search-result-layout.mobile#search-page-corredor",
       // "search-not-found-layout"
       "search-not-found-layout#search-page"
     ]
+  },
+  "search-result-layout.desktop#affiliates": {
+    "children": [
+      "flex-layout.row#searchtitle",
+      "flex-layout.row#did-you-mean",
+      "flex-layout.row#banner-one",
+      "flex-layout.row#content-affiliates",
+      "flex-layout.row#fetchmore-search-page"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "blockClass": "departament-desktop"
+    },
+    "title": "Search Result - Departament"
+  },
+  "flex-layout.row#content-affiliates": {
+    "children": [
+      "flex-layout.col#filter-affiliates",
+      "flex-layout.col#products-search-page"
+    ],
+    "props": {
+      "blockClass": "content-row-department"
+    }
+  },
+  "flex-layout.col#filter-affiliates": {
+    "children": ["filter-navigator.v3#affiliates"],
+    "props": {
+      "width": "20%",
+      "blockClass": "filterCol"
+    }
+  },
+  "filter-navigator.v3#affiliates": {
+    "props": {
+      "layout": "phone"
+    }
   }
 }
