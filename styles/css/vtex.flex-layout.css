@@ -527,7 +527,9 @@
 :global(.vtex-flex-layout-0-x-flexCol--search-byggy) {
 	flex-direction: column-reverse;
 }
-
+.flexColChild--switcher-orderByCol :global(.vtex-flex-layout-0-x-flexRowContent) {
+	justify-content: flex-end;
+}
 @media (min-width: 1540px) {
 	.flexRow--home-shelf-1 {
 		padding: 0;
