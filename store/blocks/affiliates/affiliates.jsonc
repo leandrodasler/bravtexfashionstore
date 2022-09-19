@@ -91,11 +91,14 @@
 		}
 	},
 	"flex-layout.col#controllers-affiliates": {
-		"children": ["filter-navigator.v3#affiliates", "order-by.v2"],
+		"children": ["flex-layout.row#controllers-affiliates"],
 		"props": {
 			"blockClass": "switcher-orderByCol"
 		}
 	},
+  "flex-layout.row#controllers-affiliates": {
+    "children": ["filter-navigator.v3#affiliates", "order-by.v2"]
+  },
   "filter-navigator.v3#affiliates": {
     "props": {
       "layout": "phone"
