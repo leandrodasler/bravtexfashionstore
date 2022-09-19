@@ -163,7 +163,7 @@
 		"props": {
 			"blockClass": "fetch-more-button"
 		},
-		"children": ["search-fetch-more"]
+		"children": ["vtex.search-result:search-fetch-more"]
 	},
   	"flex-layout.row#banner-one": {
     	"children": ["search-banner#one"]
@@ -267,7 +267,7 @@
 		"props": {
 			"blockClass": "fetch-more-button"
 		},
-		"children": ["search-fetch-more"]
+		"children": ["vtex.search-result:search-fetch-more"]
 	},
 	"flex-layout.row#searchtitle": {
 		"children": ["search-title.v2"],

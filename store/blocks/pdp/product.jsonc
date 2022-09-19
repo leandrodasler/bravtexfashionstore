@@ -47,7 +47,7 @@
     "props": {
       "blockClass": "breadcrumb-pdp-container"
     },
-    "children": ["breadcrumb"]
+    "children": ["vtex.breadcrumb:breadcrumb"]
   },
   "flex-layout.row#description": {
     "props": {
@@ -323,7 +323,7 @@
         "maxItems": 10,
         "itemsPerPage": 4,
         "minItemsPerPage": 2,
-        "scroll": "ONE_BY_PAGE",
+        "scroll": "ONE_BY_ONE",
         "arrows": true,
         "showTitle": false,
         "paginationDotsVisibility": "never"

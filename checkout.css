@@ -1,0 +1,756 @@
+:root {
+    --action-primary-color: #f71963;
+    --action-primary-bg: #c54b2010;
+    --default-border-color: #8a8c8f;
+    --default-text-color: #232424;
+    --default-white: #fcfcfc;
+  }
+  
+  body {
+    padding-bottom: 0 !important;
+  }
+  
+  h3 {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+  }
+  
+  h5 {
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+  }
+  
+  ul {
+    margin: unset;
+  }
+  
+  .vtex-store-footer-2-x-footerLayout a:hover,
+  .vtex-store-footer-2-x-footerLayout a:focus {
+    text-decoration: none;
+  }
+  
+  .checkout-steps_item {
+    font-size: 0.85rem;
+  }
+  
+  .vtex-flex-layout-0-x-flexRowContent--payment-methods {
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  input[type='email'],
+  input[type='number'],
+  input[type='password'],
+  input[type='tel'],
+  input[type='text'],
+  input[type='url'] {
+    font-size: 1rem;
+    height: auto;
+  }
+  
+  .btn-success {
+    color: var(--default-white);
+  }
+  
+  .checkout-steps_item .text::before,
+  .checkout-steps_item::after,
+  .btn-success,
+  .btn-success[disabled] {
+    background-color: var(--action-primary-color);
+    border-color: var(--action-primary-color);
+  }
+  
+  .btn-success:hover,
+  .btn-success:focus,
+  .btn-success:active {
+    background-color: #a93317;
+    border-color: #a93317;
+  }
+  
+  .btn-secondary,
+  .orderform-template-holder #payment-data #btn-add-gift-card,
+  .orderform-template-holder #payment-data .payment-discounts-list table td.action a,
+  .cart-more-options .srp-container .vtex-shipping-preview-0-x-pc .btn,
+  .cart-more-options
+    .srp-container
+    .vtex-shipping-preview-0-x-pc
+    .summary-template-holder
+    .summary-coupon
+    fieldset.coupon-fieldset
+    .coupon-data
+    a,
+  .summary-template-holder
+    .summary-coupon
+    fieldset.coupon-fieldset
+    .coupon-data
+    .cart-more-options
+    .srp-container
+    .vtex-shipping-preview-0-x-pc
+    a,
+  .summary-template-holder .summary-coupon fieldset.coupon-fieldset button[type='submit'],
+  .table.cart-items tbody tr td .product-service input[type='submit'],
+  .table.cart-items tbody tr td.product-name .add-service.btn,
+  .table.cart-items
+    tbody
+    tr
+    td.product-name
+    .summary-template-holder
+    .summary-coupon
+    fieldset.coupon-fieldset
+    .coupon-data
+    a.add-service,
+  .summary-template-holder
+    .summary-coupon
+    fieldset.coupon-fieldset
+    .coupon-data
+    .table.cart-items
+    tbody
+    tr
+    td.product-name
+    a.add-service,
+  .table.cart-items tbody tr td.product-name .clone-item.btn,
+  .table.cart-items
+    tbody
+    tr
+    td.product-name
+    .summary-template-holder
+    .summary-coupon
+    fieldset.coupon-fieldset
+    .coupon-data
+    a.clone-item,
+  .summary-template-holder
+    .summary-coupon
+    fieldset.coupon-fieldset
+    .coupon-data
+    .table.cart-items
+    tbody
+    tr
+    td.product-name
+    a.clone-item,
+  .table.cart-items tbody tr td.product-name .add-item-attachment-container a,
+  button#cart-shipping-calculate {
+    color: var(--action-primary-color);
+    border-color: var(--action-primary-color);
+    border-radius: 100px;
+    font-size: 1rem;
+    font-weight: 500;
+    width: auto;
+  }
+  
+  .btn-secondary:hover,
+  .orderform-template-holder #payment-data #btn-add-gift-card:hover,
+  .orderform-template-holder #payment-data .payment-discounts-list table td.action a:hover,
+  .cart-more-options .srp-container .vtex-shipping-preview-0-x-pc .btn:hover,
+  .cart-more-options
+    .srp-container
+    .vtex-shipping-preview-0-x-pc
+    .summary-template-holder
+    .summary-coupon
+    fieldset.coupon-fieldset
+    .coupon-data
+    a:hover,
+  .summary-template-holder
+    .summary-coupon
+    fieldset.coupon-fieldset
+    .coupon-data
+    .cart-more-options
+    .srp-container
+    .vtex-shipping-preview-0-x-pc
+    a:hover,
+  .summary-template-holder .summary-coupon fieldset.coupon-fieldset button[type='submit']:hover,
+  .table.cart-items tbody tr td .product-service input[type='submit']:hover,
+  .table.cart-items tbody tr td.product-name .add-service.btn:hover,
+  .table.cart-items
+    tbody
+    tr
+    td.product-name
+    .summary-template-holder
+    .summary-coupon
+    fieldset.coupon-fieldset
+    .coupon-data
+    a.add-service:hover,
+  .summary-template-holder
+    .summary-coupon
+    fieldset.coupon-fieldset
+    .coupon-data
+    .table.cart-items
+    tbody
+    tr
+    td.product-name
+    a.add-service:hover,
+  .table.cart-items tbody tr td.product-name .clone-item.btn:hover,
+  .table.cart-items
+    tbody
+    tr
+    td.product-name
+    .summary-template-holder
+    .summary-coupon
+    fieldset.coupon-fieldset
+    .coupon-data
+    a.clone-item:hover,
+  .summary-template-holder
+    .summary-coupon
+    fieldset.coupon-fieldset
+    .coupon-data
+    .table.cart-items
+    tbody
+    tr
+    td.product-name
+    a.clone-item:hover,
+  .table.cart-items tbody tr td.product-name .add-item-attachment-container a:hover,
+  .btn-secondary:focus,
+  .orderform-template-holder #payment-data #btn-add-gift-card:focus,
+  .orderform-template-holder #payment-data .payment-discounts-list table td.action a:focus,
+  .cart-more-options .srp-container .vtex-shipping-preview-0-x-pc .btn:focus,
+  .cart-more-options
+    .srp-container
+    .vtex-shipping-preview-0-x-pc
+    .summary-template-holder
+    .summary-coupon
+    fieldset.coupon-fieldset
+    .coupon-data
+    a:focus,
+  .summary-template-holder
+    .summary-coupon
+    fieldset.coupon-fieldset
+    .coupon-data
+    .cart-more-options
+    .srp-container
+    .vtex-shipping-preview-0-x-pc
+    a:focus,
+  .summary-template-holder .summary-coupon fieldset.coupon-fieldset button[type='submit']:focus,
+  .table.cart-items tbody tr td .product-service input[type='submit']:focus,
+  .table.cart-items tbody tr td.product-name .add-service.btn:focus,
+  .table.cart-items
+    tbody
+    tr
+    td.product-name
+    .summary-template-holder
+    .summary-coupon
+    fieldset.coupon-fieldset
+    .coupon-data
+    a.add-service:focus,
+  .summary-template-holder
+    .summary-coupon
+    fieldset.coupon-fieldset
+    .coupon-data
+    .table.cart-items
+    tbody
+    tr
+    td.product-name
+    a.add-service:focus,
+  .table.cart-items tbody tr td.product-name .clone-item.btn:focus,
+  .table.cart-items
+    tbody
+    tr
+    td.product-name
+    .summary-template-holder
+    .summary-coupon
+    fieldset.coupon-fieldset
+    .coupon-data
+    a.clone-item:focus,
+  .summary-template-holder
+    .summary-coupon
+    fieldset.coupon-fieldset
+    .coupon-data
+    .table.cart-items
+    tbody
+    tr
+    td.product-name
+    a.clone-item:focus,
+  .table.cart-items tbody tr td.product-name .add-item-attachment-container a:focus,
+  .btn-secondary:active,
+  .orderform-template-holder #payment-data #btn-add-gift-card:active,
+  .orderform-template-holder #payment-data .payment-discounts-list table td.action a:active,
+  .cart-more-options .srp-container .vtex-shipping-preview-0-x-pc .btn:active,
+  .cart-more-options
+    .srp-container
+    .vtex-shipping-preview-0-x-pc
+    .summary-template-holder
+    .summary-coupon
+    fieldset.coupon-fieldset
+    .coupon-data
+    a:active,
+  .summary-template-holder
+    .summary-coupon
+    fieldset.coupon-fieldset
+    .coupon-data
+    .cart-more-options
+    .srp-container
+    .vtex-shipping-preview-0-x-pc
+    a:active,
+  .summary-template-holder .summary-coupon fieldset.coupon-fieldset button[type='submit']:active,
+  .table.cart-items tbody tr td .product-service input[type='submit']:active,
+  .table.cart-items tbody tr td.product-name .add-service.btn:active,
+  .table.cart-items
+    tbody
+    tr
+    td.product-name
+    .summary-template-holder
+    .summary-coupon
+    fieldset.coupon-fieldset
+    .coupon-data
+    a.add-service:active,
+  .summary-template-holder
+    .summary-coupon
+    fieldset.coupon-fieldset
+    .coupon-data
+    .table.cart-items
+    tbody
+    tr
+    td.product-name
+    a.add-service:active,
+  .table.cart-items tbody tr td.product-name .clone-item.btn:active,
+  .table.cart-items
+    tbody
+    tr
+    td.product-name
+    .summary-template-holder
+    .summary-coupon
+    fieldset.coupon-fieldset
+    .coupon-data
+    a.clone-item:active,
+  .summary-template-holder
+    .summary-coupon
+    fieldset.coupon-fieldset
+    .coupon-data
+    .table.cart-items
+    tbody
+    tr
+    td.product-name
+    a.clone-item:active,
+  .table.cart-items tbody tr td.product-name .add-item-attachment-container a:active,
+  button#cart-shipping-calculate:hover,
+  button#cart-shipping-calculate:active,
+  button#cart-shipping-calculate:focus {
+    color: var(--action-primary-color);
+    background-color: #faede3 /* var(--action-primary-color) */;
+    border-color: var(--action-primary-color);
+  }
+  
+  .summary-template-holder .cart-links-bottom .btn-success {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  .btn-large,
+  .client-pre-email .client-email.input.text .btn-success,
+  .summary-template-holder .summary-coupon fieldset.coupon-fieldset button[type='submit'],
+  .btn,
+  .orderform-template-holder #payment-data .payment-discounts-list table td.action a,
+  .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data a,
+  .orderform-template .cart-template.mini-cart .summary-template-holder input[type='text'],
+  .orderform-template .cart-template.mini-cart .summary-template-holder button[type='submit'],
+  .orderform-template .cart-template.mini-cart .summary-template-holder p.coupon-fields span.info > span,
+  .btn-block,
+  .orderform-template-holder .step .submit.btn.btn-success,
+  .orderform-template-holder
+    .step
+    .summary-template-holder
+    .summary-coupon
+    fieldset.coupon-fieldset
+    .coupon-data
+    a.submit.btn-success,
+  .summary-template-holder
+    .summary-coupon
+    fieldset.coupon-fieldset
+    .coupon-data
+    .orderform-template-holder
+    .step
+    a.submit.btn-success,
+  .orderform-template-holder .step #payment-data .payment-discounts-list table td.action a.submit.btn-success,
+  .orderform-template-holder #payment-data .payment-discounts-list table td.action .step a.submit.btn-success {
+    padding: 8px 12px !important;
+    height: auto !important;
+    line-height: 1rem !important;
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+  }
+  
+  .btn#payment-data-submit span,
+  .orderform-template-holder #payment-data .payment-discounts-list table td.action a#payment-data-submit span,
+  .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data a#payment-data-submit span {
+    font-size: 1rem;
+  }
+  
+  .table.cart-items td.product-name a,
+  .table.cart-items td.product-name a:hover {
+    color: var(--default-text-color);
+    font-weight: normal;
+  }
+  
+  .orderform-template-holder .step .form-step #is-corporate-client {
+    color: var(--action-primary-color);
+  }
+  
+  .cart-more-options,
+  .cart-template-holder .cart,
+  .orderform-template-holder #client-profile-data form.client-pre-email,
+  .orderform-template-holder #client-profile-data .step.client-profile-data,
+  .orderform-template-holder #shipping-data,
+  .orderform-template-holder #payment-data,
+  .orderform-template .custom-cart-template-wrap {
+    box-shadow: 0px 8px 24px rgba(32, 32, 32, 0.08);
+    border-radius: 8px;
+    background: var(--default-white);
+  }
+  
+  .body-cart-vertical .cart-template.full-cart.active {
+    justify-content: flex-end;
+  }
+  
+  .cart-more-options {
+    display: none !important;
+  }
+  
+  .table.cart-items td.quantity {
+    border: none;
+  }
+  
+  .table.cart-items td.quantity .item-quantity-change {
+    border: 1px solid var(--default-border-color);
+    border-radius: 50%;
+    color: var(--default-border-color);
+    width: 32px;
+    height: 32px;
+  }
+  
+  .table.cart-items td.quantity .item-quantity-change:hover {
+    background-color: #f2f4f5;
+  }
+  
+  .table.cart-items td.quantity .item-quantity-change i:before {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    color: var(--default-border-color);
+  }
+  
+  .table.cart-items td.quantity .item-quantity-change.item-quantity-change-decrement i:before {
+    line-height: 29px;
+  }
+  
+  /* Alinhamento das colunas no carrinho */
+  .table.cart-items thead tr {
+    justify-content: space-between;
+  }
+  
+  .table.cart-items thead tr th {
+    color: var(--action-primary-color);
+    font-size: 1.125rem;
+    font-weight: 500;
+    padding: 8px 8px 1rem;
+  }
+  
+  .table.cart-items tbody tr .v-custom-product-item-wrap {
+    padding: 1rem 0 0;
+  }
+  
+  .table.cart-items thead tr th.product {
+    width: 40% !important;
+  }
+  
+  .table.cart-items thead tr th.product-price {
+    order: 1;
+    width: 15% !important;
+  }
+  
+  .table.cart-items thead tr th.quantity {
+    order: 2;
+    width: 15% !important;
+  }
+  
+  .table.cart-items thead tr th.shipping-date {
+    order: 3;
+    display: table-cell;
+    width: 10% !important;
+  }
+  
+  .table.cart-items thead tr th.quantity-price {
+    order: 4;
+    display: table-cell;
+    width: 15% !important;
+  }
+  
+  .table.cart-items thead tr th.item-remove {
+    order: 5;
+    display: table-cell;
+    width: 5% !important;
+  }
+  
+  .table.cart-items tbody tr td.product-image {
+    width: 12% !important;
+  }
+  
+  @media (min-width: 769px) {
+    .table.cart-items tbody tr td.product-name {
+      width: 28% !important;
+    }
+  }
+  
+  .table.cart-items tbody tr td.product-name {
+    order: 2;
+  }
+  
+  .table.cart-items tbody tr td.product-price {
+    order: 3;
+    margin: 0;
+    width: 15% !important;
+  }
+  
+  .table.cart-items tbody tr td.quantity {
+    margin: 0;
+    width: 15% !important;
+    order: 4;
+    justify-content: center;
+  }
+  
+  .table.cart-items tbody tr td.shipping-date {
+    order: 5;
+    display: table-cell;
+    width: 10% !important;
+  }
+  
+  .table.cart-items tbody tr td.quantity-price {
+    order: 6;
+    margin: 0;
+    width: 15% !important;
+    display: table-cell !important;
+  }
+  
+  .table.cart-items tbody tr td.item-remove {
+    width: auto !important;
+    margin: 0 !important;
+  }
+  
+  .table.cart-items i.icon.icon-remove.item-remove-ico::before {
+    content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNC41IDVWMjJIMTkuNVY1SDQuNVoiIHN0cm9rZT0iIzhBOEM4RiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTEwIDEwVjE2LjUiIHN0cm9rZT0iIzhBOEM4RiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMTQgMTBWMTYuNSIgc3Ryb2tlPSIjOEE4QzhGIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yIDVIMjIiIHN0cm9rZT0iIzhBOEM4RiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNOCA1TDkuNjQ0NSAySDE0LjM4ODVMMTYgNUg4WiIgc3Ryb2tlPSIjOEE4QzhGIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=);
+  }
+  
+  .table.cart-items tbody tr td.product-price .new-product-real-price-per-unit,
+  .table.cart-items tbody tr td.quantity-price .new-product-real-price-per-unit {
+    display: block;
+    margin-top: 0.25rem;
+  }
+  
+  .table.cart-items .item-unit-label {
+    display: none;
+  }
+  
+  .body-cart-vertical .summary-template-holder {
+    background: none;
+    width: 40%;
+  }
+  
+  .summary-template-holder tfoot tr td.monetary {
+    white-space: nowrap;
+  }
+  
+  .table.cart-items td.quantity input {
+    width: 64px !important;
+    margin: 0 8px;
+    border: 1px solid var(--default-border-color);
+  }
+  
+  .table.cart-items thead {
+    border-bottom: 1px solid #cbcccd;
+  }
+  
+  .table.cart-items tbody tr {
+    border-top: none;
+  }
+  
+  .full-cart .summary-template-holder .summary-totalizers tfoot td.monetary {
+    color: var(--action-primary-color);
+    font-size: 1.125rem;
+  }
+  
+  .full-cart .summary-template-holder .summary-totalizers tbody td.monetary {
+    color: var(--default-text-color);
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  .table.cart-items tbody tr td.quantity-price .total-selling-price {
+    font-weight: 400;
+  }
+  
+  .full-cart .summary-template-holder .summary-totalizers tfoot tr td {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  .orderform-template .cart-template.mini-cart h2 {
+    text-align: center;
+  }
+  
+  .table.cart-items tbody tr td.product-price .best-price {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  
+  .orderform-template .cart-template.mini-cart #go-to-cart-button {
+    display: none;
+  }
+  
+  body a,
+  .cart-more-options .srp-container .onda-v1 .blue,
+  .orderform-template .cart-template.mini-cart .summary-totalizers tfoot tr td.monetary,
+  .orderform-template .cart-template.mini-cart .quantity,
+  .orderform-template-holder #client-profile-data form.client-pre-email .link-box-edit,
+  .orderform-template-holder #client-profile-data .step.client-profile-data .link-box-edit,
+  .orderform-template-holder #shipping-data .link-box-edit,
+  .orderform-template-holder #payment-data .link-box-edit,
+  .orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-summaryChange {
+    color: var(--action-primary-color);
+  }
+  
+  body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle > span:before,
+  body.v-custom-step-payment .payment-data .accordion-toggle > span:not(.payment-edit-link):before,
+  body.v-custom-step-shipping .shipping-data .accordion-toggle:before,
+  body.v-custom-step-profile .client-profile-data .accordion-toggle > span:before,
+  body.v-custom-step-email .client-pre-email h3.client-pre-email-h span:before,
+  body.v-custom-step-profile .client-pre-email h3.client-pre-email-h span:before,
+  body.v-custom-step-payment .client-pre-email h3.client-pre-email-h span:before,
+  body.v-custom-step-payment .client-profile-data .accordion-toggle > span:before,
+  body.v-custom-step-payment .shipping-data .accordion-toggle:before,
+  body.v-custom-step-shipping .client-pre-email h3.client-pre-email-h span:before,
+  body.v-custom-step-shipping .client-profile-data .accordion-toggle > span:before {
+    background-color: var(--action-primary-color);
+    border-color: var(--action-primary-color);
+  }
+  
+  .orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-summaryChange,
+  .orderform-template .cart-template.mini-cart .quantity {
+    background-color: var(--action-primary-bg);
+  }
+  
+  .summary-template-holder .summary-totalizers tbody.shipping-calculate,
+  .full-cart .summary-totalizers .monetary.form-postal-code {
+    display: block !important;
+  }
+  
+  fieldset.shipping-fieldset {
+    padding: 0;
+    margin-left: 1rem;
+  }
+  
+  #shipping-calculate-link {
+    display: none;
+  }
+  
+  input#summary-postal-code {
+    width: 65%;
+  }
+  
+  .btn-place-order-wrapper {
+    display: flex;
+    gap: 10px;
+  }
+  
+  #continue-shopping-button {
+    background: transparent;
+    color: var(--action-primary-color);
+  }
+  
+  
+  .modal.guest-login-modal,
+  .modal.modal-email-template,
+  .modal.modal-payment-template,
+  .modal.modal-masked-info-template {
+    background: var(--action-primary-color);
+  }
+  
+  .summary-template-holder tfoot tr td,
+  .summary-template-holder tbody td {
+    color: var(--default-text-color);
+    font-size: 1rem;
+  }
+  .orderform-template-holder #payment-data .v-custom-payment-item-wrap .payment-group-item.active {
+    background-color: var(--action-primary-bg);
+    border-color: var(--action-primary-color);
+  }
+  
+  .orderform-template-holder #payment-data .v-custom-payment-item-wrap.active,
+  .orderform-template-holder #payment-data .v-custom-payment-item-wrap:hover {
+    border-color: var(--action-primary-color);
+  }
+  
+  .orderform-template-holder
+    #payment-data
+    .v-custom-payment-item-wrap
+    .payment-group-item.active
+    .payment-group-item-text:before {
+    background: var(--action-primary-color);
+    border-color: var(--action-primary-color);
+  }
+  
+  svg.pickup-marker-blue,
+  svg.pickup-marker-blue path,
+  svg.pkpmodal-pickup-point-marker-image,
+  svg.pkpmodal-pickup-point-marker-image path,
+  svg.vtex-omnishipping-1-x-svg,
+  svg.vtex-omnishipping-1-x-svg path,
+  svg.pkpmodal-pickup-point-best-marker-image path:not([fill='white']) {
+    fill: var(--action-primary-color);
+  }
+  
+  .btn-link,
+  .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data a {
+    color: var(--action-primary-color);
+  }
+  
+  .vtex-omnishipping-1-x-deliveryGroup {
+    margin-bottom: 1rem;
+  }
+  
+  .orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-addressItemOption:hover,
+  .orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-active {
+    background-color: var(--action-primary-bg);
+  }
+  
+  .summary-template-holder .summary-coupon p.coupon-fields span.info > span {
+    color: var(--action-primary-color);
+  }
+  
+  .summary-coupon fieldset.coupon-fieldset .vcustom-showCustomMsgCoupon {
+    border-color: var(--action-primary-color);
+    background-color: var(--action-primary-bg);
+  }
+  
+  .orderform-template .cart-template.mini-cart .summary-totalizers tbody td,
+  .orderform-template .cart-template.mini-cart .summary-totalizers tfoot tr td {
+    font-size: 1rem;
+    color: var(--default-text-color);
+    line-height: 20px;
+  }
+  
+  .orderform-template .cart-template.mini-cart .summary-totalizers tfoot tr td {
+    font-weight: 500;
+  }
+  
+  .orderform-template .cart-template.mini-cart .summary-totalizers tfoot tr td.monetary {
+    font-size: 1.125rem;
+  }
+  
+  /* Aviso de loja demonstrativa */
+  .demo-store-warning {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    padding: 10px;
+    background-color: #f8f7fc;
+    color: #E42760;
+    font-family: 'Fabriga';
+    font-size: 16px;
+    line-height: 1.5rem;
+  }
+  
+  .demo-store-warning::before {
+    content: '.';
+    background-image: url("data:image/svg+xml,%3Csvg width='25' height='24' viewBox='0 0 25 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.8333 12.6667V10.6667H11.1667H9.16667V12.6667H11.1667V15.3333H9.16667V17.3333H11.1667H13.8333H15.8333V15.3333H13.8333V12.6667ZM12.5 9.33333C13.604 9.33333 14.5 8.43733 14.5 7.33333C14.5 6.22933 13.604 5.33333 12.5 5.33333C11.396 5.33333 10.5 6.22933 10.5 7.33333C10.5 8.43733 11.396 9.33333 12.5 9.33333ZM12.5 22C6.98533 22 2.5 17.5147 2.5 12C2.5 6.48533 6.98533 2 12.5 2C18.0147 2 22.5 6.48533 22.5 12C22.5 17.5147 18.0147 22 12.5 22ZM12.5 0C5.872 0 0.5 5.372 0.5 12C0.5 18.628 5.872 24 12.5 24C19.128 24 24.5 18.628 24.5 12C24.5 5.372 19.128 0 12.5 0Z' fill='%23E42760'/%3E%3Cmask id='mask0_936_12631' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='25' height='24'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.8333 12.6667V10.6667H11.1667H9.16667V12.6667H11.1667V15.3333H9.16667V17.3333H11.1667H13.8333H15.8333V15.3333H13.8333V12.6667ZM12.5 9.33333C13.604 9.33333 14.5 8.43733 14.5 7.33333C14.5 6.22933 13.604 5.33333 12.5 5.33333C11.396 5.33333 10.5 6.22933 10.5 7.33333C10.5 8.43733 11.396 9.33333 12.5 9.33333ZM12.5 22C6.98533 22 2.5 17.5147 2.5 12C2.5 6.48533 6.98533 2 12.5 2C18.0147 2 22.5 6.48533 22.5 12C22.5 17.5147 18.0147 22 12.5 22ZM12.5 0C5.872 0 0.5 5.372 0.5 12C0.5 18.628 5.872 24 12.5 24C19.128 24 24.5 18.628 24.5 12C24.5 5.372 19.128 0 12.5 0Z' fill='white'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_936_12631)'%3E%3Crect x='-19.5' y='-20' width='64' height='64' fill='%23E42760'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    margin-right: 0.5rem;
+    width: 110px;
+    height: 24px;
+  }

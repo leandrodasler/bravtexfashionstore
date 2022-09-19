@@ -107,7 +107,7 @@
 		"props": {
 			"blockClass": "fetch-more-button"
 		},
-		"children": ["search-fetch-more"]
+		"children": ["vtex.search-result:search-fetch-more"]
 	},
 	"flex-layout.row#seo-text-categoryDesk": {
 		"children": ["rich-text#seo-categoryDesk"],
@@ -227,7 +227,7 @@
 		"props": {
 			"blockClass": "fetch-more-button"
 		},
-		"children": ["search-fetch-more"]
+		"children": ["vtex.search-result:search-fetch-more"]
 	}
 	// "flex-layout.row#seo-text-department": {
 	// 	"children": ["rich-text#seo-text"],

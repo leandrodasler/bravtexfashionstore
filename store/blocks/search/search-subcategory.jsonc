@@ -104,7 +104,7 @@
 		"props": {
 			"blockClass": "fetch-more-button"
 		},
-		"children": ["search-fetch-more"]
+		"children": ["vtex.search-result:search-fetch-more"]
 	},
 	//-------mobile
 	"search-result-layout.mobile#sub-categoria-corredor": {
@@ -170,6 +170,6 @@
 		"props": {
 			"blockClass": "fetch-more-button"
 		},
-		"children": ["search-fetch-more"]
+		"children": ["vtex.search-result:search-fetch-more"]
 	}
 }
