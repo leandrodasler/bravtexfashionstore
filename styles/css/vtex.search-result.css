@@ -11,3 +11,7 @@
 .buttonShowMore {
   margin-bottom: 1rem;
 }
+
+.filterPopupButton {
+  border: none;
+}
