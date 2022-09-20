@@ -27,7 +27,7 @@
 	/*Header Desktop*/
 	"header-layout.desktop": {
 		"children": [
-			"affiliate-url-monitoring",
+			"vtex.affiliates:affiliate-url-monitoring",
 			"flex-layout.row#demo-store-warning",
 			"sticky-layout#3-desktop",
 			"flex-layout.row#4-desktop"
@@ -145,7 +145,7 @@
 	/*Header Mobile*/
 	"header-layout.mobile": {
 		"children": [
-			"affiliate-url-monitoring",
+			"vtex.affiliates:affiliate-url-monitoring",
 			"flex-layout.row#demo-store-warning",
 			"flex-layout.row#1-mobile",
 			"sticky-layout#1-mobile",
