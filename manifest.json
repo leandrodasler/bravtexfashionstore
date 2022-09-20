@@ -1,7 +1,7 @@
 {
   "vendor": "bravtexfashionstore",
   "name": "bravtexfashionstore-theme",
-  "version": "7.0.0",
+  "version": "5.0.24",
   "builders": {
     "styles": "2.x",
     "node": "6.x",
@@ -154,14 +154,14 @@
     "vtex.product-summary-context": "0.x",
     "vtex.order-items": "0.x",
     "vtex.styles-graphql": "1.x",
-    "bravtexgrocerystore.bravtexgrocery-components": "0.x"
+    "bravtexgrocerystore.bravtexgrocery-components": "0.x",
+    "vtex.affiliates": "0.61.1"
   },
   "peerDependencies": {
     "vtex.wish-list": "1.x",
     "vtex.store-locator": "0.x",
     "vtexbr.kitlook": "5.x",
-    "vtexventures.livestreaming-free": "0.x",
-    "vtex.affiliates": "0.x"
+    "vtexventures.livestreaming-free": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
