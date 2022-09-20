@@ -145,7 +145,6 @@
 	/*Header Mobile*/
 	"header-layout.mobile": {
 		"children": [
-			"affiliate-url-monitoring",
 			"flex-layout.row#demo-store-warning",
 			"flex-layout.row#1-mobile",
 			"sticky-layout#1-mobile",
