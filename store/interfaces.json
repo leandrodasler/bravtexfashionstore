@@ -6,5 +6,8 @@
   },
   "store.product.kitlook": {
     "allowed": ["kitlook-layout", "kitlook"]
+  },
+  "affiliate-url-monitoring-theme": {
+    "component": "AffiliateURLMonitoring"
   }
 }

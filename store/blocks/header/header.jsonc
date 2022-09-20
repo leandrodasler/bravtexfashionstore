@@ -27,7 +27,7 @@
 	/*Header Desktop*/
 	"header-layout.desktop": {
 		"children": [
-			"affiliate-url-monitoring",
+			"affiliate-url-monitoring-theme",
 			"flex-layout.row#demo-store-warning",
 			"sticky-layout#3-desktop",
 			"flex-layout.row#4-desktop"
