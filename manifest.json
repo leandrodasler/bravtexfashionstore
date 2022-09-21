@@ -155,7 +155,7 @@
     "vtex.order-items": "0.x",
     "vtex.styles-graphql": "1.x",
     "bravtexgrocerystore.bravtexgrocery-components": "0.x",
-    "vtex.affiliates": "0.x"
+    "vtex.affiliates": "1.x"
   },
   "peerDependencies": {
     "vtex.wish-list": "1.x",
