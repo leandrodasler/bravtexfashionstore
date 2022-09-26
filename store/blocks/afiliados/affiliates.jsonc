@@ -1,119 +1,119 @@
 {
-  // "store.affiliates": {
-  //   "blocks": ["affiliate-validator"]
-  // },
-  // "affiliate-validator": {
+  "store.affiliates": {
+    "blocks": ["affiliate-validator"]
+  },
+  "affiliate-validator": {
+    "props": {
+      "Valid": "affiliate-template",
+      "Invalid": "affiliate-invalid-template"
+    }
+  },
+  "affiliate-template": {
+    "children": [
+      // "affiliate-store-name",
+      "flex-layout.row#banner",
+      "search-result-layout.customQuery#affiliate"
+    ]
+  },
+  "flex-layout.row#banner": {
+    "children": ["image#affiliate-banner"]
+  },
+  "image#affiliate-banner": {
+    "props": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/VTEX_Logo.svg/400px-VTEX_Logo.svg.png"
+    }
+  },
+  "search-result-layout.customQuery#affiliate": {
+    "props": {
+      "querySchema": {
+        "skusFilter": "ALL_AVAILABLE",
+        "simulationBehavior": "default",
+        "queryField": "137",
+        "mapField": "productClusterIds",
+        "facetsBehavior": "Dynamic"
+      }
+    },
+    "blocks": [
+      // "search-result-layout.desktop",
+      "search-result-layout.desktop#affiliates",
+      // "search-result-layout.mobile",
+      "search-result-layout.mobile#search-page-corredor",
+      // "search-not-found-layout"
+      "search-not-found-layout#search-page"
+    ]
+  },
+  "search-result-layout.desktop#affiliates": {
+    "children": [
+      "flex-layout.row#searchtitle",
+      "flex-layout.row#did-you-mean",
+      "flex-layout.row#banner-one",
+      "flex-layout.row#content-affiliates",
+      "flex-layout.row#fetchmore-search-page"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "blockClass": "departament-desktop"
+    },
+    "title": "Search Result - Departament"
+  },
+  "flex-layout.row#content-affiliates": {
+    "children": [
+      // "flex-layout.col#filter-affiliates",
+      "flex-layout.col#products-affiliates"
+    ],
+    "props": {
+      "blockClass": "content-row-department"
+    }
+  },
+  // "flex-layout.col#filter-affiliates": {
+  //   "children": ["filter-navigator.v3#affiliates"],
   //   "props": {
-  //     "Valid": "affiliate-template",
-  //     "Invalid": "affiliate-invalid-template"
+  //     "width": "20%",
+  //     "blockClass": "filterCol"
   //   }
   // },
-  // "affiliate-template": {
-  //   "children": [
-  //     // "affiliate-store-name",
-  //     "flex-layout.row#banner",
-  //     "search-result-layout.customQuery#affiliate"
-  //   ]
-  // },
-  // "flex-layout.row#banner": {
-  //   "children": ["image#affiliate-banner"]
-  // },
-  // "image#affiliate-banner": {
-  //   "props": {
-  //     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/VTEX_Logo.svg/400px-VTEX_Logo.svg.png"
-  //   }
-  // },
-  // "search-result-layout.customQuery#affiliate": {
-  //   "props": {
-  //     "querySchema": {
-  //       "skusFilter": "ALL_AVAILABLE",
-  //       "simulationBehavior": "default",
-  //       "queryField": "137",
-  //       "mapField": "productClusterIds",
-  //       "facetsBehavior": "Dynamic"
-  //     }
-  //   },
-  //   "blocks": [
-  //     // "search-result-layout.desktop",
-  //     "search-result-layout.desktop#affiliates",
-  //     // "search-result-layout.mobile",
-  //     "search-result-layout.mobile#search-page-corredor",
-  //     // "search-not-found-layout"
-  //     "search-not-found-layout#search-page"
-  //   ]
-  // },
-  // "search-result-layout.desktop#affiliates": {
-  //   "children": [
-  //     "flex-layout.row#searchtitle",
-  //     "flex-layout.row#did-you-mean",
-  //     "flex-layout.row#banner-one",
-  //     "flex-layout.row#content-affiliates",
-  //     "flex-layout.row#fetchmore-search-page"
-  //   ],
-  //   "props": {
-  //     "pagination": "show-more",
-  //     "mobileLayout": {
-  //       "mode1": "small",
-  //       "mode2": "normal"
-  //     },
-  //     "blockClass": "departament-desktop"
-  //   },
-  //   "title": "Search Result - Departament"
-  // },
-  // "flex-layout.row#content-affiliates": {
-  //   "children": [
-  //     // "flex-layout.col#filter-affiliates",
-  //     "flex-layout.col#products-affiliates"
-  //   ],
-  //   "props": {
-  //     "blockClass": "content-row-department"
-  //   }
-  // },
-  // // "flex-layout.col#filter-affiliates": {
-  // //   "children": ["filter-navigator.v3#affiliates"],
-  // //   "props": {
-  // //     "width": "20%",
-  // //     "blockClass": "filterCol"
-  // //   }
-  // // },
-  // "flex-layout.col#products-affiliates": {
-  //   "children": [
-  //     "flex-layout.row#affiliates-info",
-  //     "flex-layout.row#search-page-products-corredor"
-  //   ],
-  //   "props": {
-  //     "preventVerticalStretch": true,
-  //     "blockClass": "searchbread-row-department"
-  //   }
-  // },
-  // "flex-layout.row#affiliates-info": {
-  //   "children": [
-  //     "flex-layout.col#search-page-productCount-corredor",
-  //     "flex-layout.col#controllers-affiliates"
-  //   ],
-  //   "props": {
-  //     "blockClass": "searchinfo-corredor"
-  //   }
-  // },
-  // "flex-layout.col#controllers-affiliates": {
-  //   "children": ["flex-layout.row#controllers-affiliates"],
-  //   "props": {
-  //     "blockClass": "switcher-orderByCol"
-  //   }
-  // },
-  // "flex-layout.row#controllers-affiliates": {
-  //   "children": [
-  //     "affiliate-profile-button",
-  //     "filter-navigator.v3#affiliates",
-  //     "order-by.v2"
-  //   ],
-  //   "props": {
-  //     "colSizing": "auto"
-  //   }
-  // },
-  // "filter-navigator.v3#affiliates": {
-  //   "props": {
-  //     "layout": "phone"
-  //   }
-  // }
+  "flex-layout.col#products-affiliates": {
+    "children": [
+      "flex-layout.row#affiliates-info",
+      "flex-layout.row#search-page-products-corredor"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "searchbread-row-department"
+    }
+  },
+  "flex-layout.row#affiliates-info": {
+    "children": [
+      "flex-layout.col#search-page-productCount-corredor",
+      "flex-layout.col#controllers-affiliates"
+    ],
+    "props": {
+      "blockClass": "searchinfo-corredor"
+    }
+  },
+  "flex-layout.col#controllers-affiliates": {
+    "children": ["flex-layout.row#controllers-affiliates"],
+    "props": {
+      "blockClass": "switcher-orderByCol"
+    }
+  },
+  "flex-layout.row#controllers-affiliates": {
+    "children": [
+      "affiliate-profile-button",
+      "filter-navigator.v3#affiliates",
+      "order-by.v2"
+    ],
+    "props": {
+      "colSizing": "auto"
+    }
+  },
+  "filter-navigator.v3#affiliates": {
+    "props": {
+      "layout": "phone"
+    }
+  }
 }
