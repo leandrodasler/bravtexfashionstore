@@ -10,7 +10,7 @@ interface Props {
   parameter: string
 }
 
-function AffiliateURLMonitoring(props: Props) {
+function AffiliateURLMonitoringTheme(props: Props) {
   const { orderForm, setOrderForm } = useOrderForm()
   const {
     route: { queryString },
@@ -41,7 +41,7 @@ function AffiliateURLMonitoring(props: Props) {
   return null
 }
 
-AffiliateURLMonitoring.schema = {
+AffiliateURLMonitoringTheme.schema = {
   title: 'admin/editor.affiliateURLmonitoring.title',
   description: 'admin/editor.affiliateURLmonitoring.description',
   type: 'object',
@@ -55,4 +55,4 @@ AffiliateURLMonitoring.schema = {
   },
 }
 
-export default AffiliateURLMonitoring
+export default AffiliateURLMonitoringTheme
