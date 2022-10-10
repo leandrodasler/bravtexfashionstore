@@ -10,10 +10,15 @@
   },
   "affiliate-template": {
     "children": [
-      // "affiliate-store-name",
-      "flex-layout.row#banner",
+      "stack-layout#affiliate-banner",
       "search-result-layout.customQuery#affiliate"
     ]
+  },
+  "stack-layout#affiliate-banner": {
+    "props": {
+      "blockClass": "affiliate-banner"
+    },
+    "children": ["flex-layout.row#banner", "affiliate-store-name"]
   },
   "flex-layout.row#banner": {
     "children": ["image#affiliate-banner"]
