@@ -2,3 +2,7 @@
   left: auto;
   right: 0;
 }
+
+.stackItem--affiliate-banner {
+  width: 100%;
+}
