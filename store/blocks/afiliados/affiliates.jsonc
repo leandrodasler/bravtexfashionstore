@@ -21,7 +21,7 @@
     "children": ["flex-layout.row#banner", "affiliate-store-name"]
   },
   "flex-layout.row#banner": {
-    "children": ["image#affiliate-banner"]
+    "children": ["affiliate-banner"]
   },
   "image#affiliate-banner": {
     "props": {
