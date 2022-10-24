@@ -18,7 +18,7 @@
     "props": {
       "blockClass": "affiliate-banner"
     },
-    "children": ["flex-layout.row#banner", "affiliate-store-name"]
+    "children": ["flex-layout.row#banner"/* , "affiliate-store-name" */]
   },
   "flex-layout.row#banner": {
     "children": ["affiliate-banner"]
