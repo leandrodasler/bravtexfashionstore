@@ -213,7 +213,7 @@ const ListProductsCollectionOrder = (props: PropsWithChildren<Props>) => {
                 }
               })
             })
-            setReorderedProducts(reorderedProducts)
+            setReorderedProducts(newReorderedProducts)
             setLoadingRest(false)
           }
         })
