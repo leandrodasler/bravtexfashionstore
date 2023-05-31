@@ -92,7 +92,7 @@
     "title": "Influencer - Prateleira 1"
   },
   "flex-layout.col#influencer-shelf1": {
-    "children": ["list-products-collection-order#influencer-shelf-1"],
+    "children": ["list-products-collection-order-v2#influencer-shelf-1"],
     "props": {
       "blockClass": "shelf2",
       "width": "100%",
@@ -100,7 +100,7 @@
     },
     "title": "Prateleira 1 - Prateleira"
   },
-  "list-products-collection-order#influencer-shelf-1": {
+  "list-products-collection-order-v2#influencer-shelf-1": {
     "title": "Prateleira 1 - Coleção ordenada",
     "blocks": ["product-summary.shelf#home"],
     "children": ["slider-layout#influencer-demo-products1"],
@@ -153,7 +153,7 @@
     "title": "Influencer - Prateleira 2"
   },
   "flex-layout.col#influencer-shelf2": {
-    "children": ["list-products-collection-order#influencer-shelf-2"],
+    "children": ["list-products-collection-order-v2#influencer-shelf-2"],
     "props": {
       "blockClass": "shelf2",
       "width": "100%",
@@ -161,7 +161,7 @@
     },
     "title": "Prateleira 2 - Prateleira"
   },
-  "list-products-collection-order#influencer-shelf-2": {
+  "list-products-collection-order-v2#influencer-shelf-2": {
     "title": "Prateleira 2 - Coleção ordenada",
     "blocks": ["product-summary.shelf#home"],
     "children": ["slider-layout#influencer-demo-products2"],

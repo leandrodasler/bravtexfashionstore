@@ -214,7 +214,7 @@
     "title": "Home - Prateleira 1"
   },
   "flex-layout.col#shelf1": {
-    "children": [/* "list-context.product-list#demo1",  */"list-products-collection-order#shelf-1"],
+    "children": [/* "list-context.product-list#demo1",  */"list-products-collection-order-v2#shelf-1"],
     "props": {
       "blockClass": "shelf2",
       "width": "100%",
@@ -222,7 +222,7 @@
     },
     "title": "Prateleira 1 - Prateleira"
   },
-  "list-products-collection-order#shelf-1": {
+  "list-products-collection-order-v2#shelf-1": {
     "title": "Prateleira 1 - Coleção ordenada",
     "blocks": ["product-summary.shelf#home"],
     "children": ["slider-layout#demo-products1"],
@@ -283,7 +283,7 @@
     "title": "Home - Prateleira 2"
   },
   "flex-layout.col#shelf2": {
-    "children": [/* "list-context.product-list#demo2",  */"list-products-collection-order#shelf-2"],
+    "children": [/* "list-context.product-list#demo2",  */"list-products-collection-order-v2#shelf-2"],
     "props": {
       "blockClass": "shelf2",
       "width": "100%",
@@ -291,7 +291,7 @@
     },
     "title": "Prateleira 2 - Prateleira"
   },
-  "list-products-collection-order#shelf-2": {
+  "list-products-collection-order-v2#shelf-2": {
     "title": "Prateleira 2 - Coleção ordenada",
     "blocks": ["product-summary.shelf#home"],
     "children": ["slider-layout#demo-products2"],

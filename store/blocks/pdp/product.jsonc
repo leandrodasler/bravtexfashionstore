@@ -360,28 +360,5 @@
         "gap": "ph5"
       }
     }
-  },
-  "list-context.product-list#demo3": {
-    "blocks": ["product-summary.shelf#home"],
-    "children": ["slider-layout#demo-products3"],
-    "props": {
-      "orderBy": "OrderByNameDESC"
-    },
-    "title": "Relacionados - Produtos"
-  },
-  "slider-layout#demo-products3": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 2,
-        "tablet": 2,
-        "phone": 2
-      },
-      "infinite": true,
-      "fullWidth": false,
-      "blockClass": "shelf",
-      "showPaginationDots": "never",
-      "showNavigationArrows": "never"
-    },
-    "title": "Relacionados - Slider"
   }
 }

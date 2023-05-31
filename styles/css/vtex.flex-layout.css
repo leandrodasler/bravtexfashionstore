@@ -29,12 +29,12 @@
 	background-color: #F71963;
 }
 .flexRowContent--menu-link {
-	max-width: 1440px;
+	max-width: 90rem;
 	margin: 0 auto;
 }
 .flexRowContent--main-header {
 	background-color: #ffffff;
-	max-width: 1238px;
+	max-width: 90rem;
 	margin: 0 auto;
 }
 .flexRowContent--main-header-mobile {
@@ -88,8 +88,9 @@
 .flexRow--home-shelf-1 :global(.vtex-store-components-3-x-container),
 .flexRow--home-shelf-2 :global(.vtex-store-components-3-x-container) {
 	margin-left: auto;
-    max-width: 85vw;
+    max-width: 90rem;
     margin-right: unset;
+	margin: 0 auto;
 }
 .flexColChild--shelf2 {
 	width: 100%;

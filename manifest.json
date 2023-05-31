@@ -4,11 +4,8 @@
   "version": "6.0.11",
   "builders": {
     "styles": "2.x",
-    "node": "6.x",
     "store": "0.x",
-    "react": "3.x",
     "assets": "0.x",
-    "messages": "1.x",
     "sitemap": "0.x",
     "docs": "0.x"
   },
@@ -155,7 +152,8 @@
     "vtex.order-items": "0.x",
     "vtex.styles-graphql": "1.x",
     "bravtexgrocerystore.bravtexgrocery-components": "0.x",
-    "ssesandbox04.affiliates-banners": "0.x"
+    "ssesandbox04.affiliates-banners": "0.x",
+    "ssesandbox04.list-products-collection-order": "0.x"
   },
   "peerDependencies": {
     "vtex.affiliates": "1.x",
