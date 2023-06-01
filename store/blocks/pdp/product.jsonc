@@ -128,14 +128,7 @@
     },
     "children": [
       "flex-layout.col#product-info-name-and-price",
-      "flex-layout.col",
-      "flex-layout.col",
-      "flex-layout.col",
-      "flex-layout.col",
       "livestreaming-snack-size-videos",
-      "flex-layout.col",
-      "flex-layout.col",
-      "flex-layout.col",
       "flex-layout.col#product-selector",
       "sku-selector",
       "flex-layout.row#quantity-buy-button-custom-component"
