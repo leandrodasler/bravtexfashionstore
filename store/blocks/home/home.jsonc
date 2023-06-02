@@ -4,6 +4,7 @@
   },
   "responsive-layout.desktop#home": {
     "children": [
+      "ps-button-call-modal",
       "flex-layout.row#home-banners",
       "flex-layout.row#shelf-titlediv1",
       "flex-layout.row#shelf1",

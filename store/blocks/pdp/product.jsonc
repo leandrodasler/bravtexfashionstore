@@ -131,6 +131,7 @@
       "livestreaming-snack-size-videos",
       "flex-layout.col#product-selector",
       "sku-selector",
+      "ps-product",
       "flex-layout.row#quantity-buy-button-custom-component"
     ]
   },

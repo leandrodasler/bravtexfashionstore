@@ -12,6 +12,13 @@
 		"blocks": ["order-placed"]
 	},
 
+	"store.custom#ps-call": {
+		"blocks": ["ps-call"],
+		"props": {
+			"blockClass": "ps-call"
+		}
+	},
+
 	/*"store.account": {
 		"blocks": ["my-account"],
 		"parent": {
