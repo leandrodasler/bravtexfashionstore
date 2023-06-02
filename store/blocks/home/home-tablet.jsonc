@@ -1,6 +1,7 @@
 {
 	"responsive-layout.tablet#home": {
 		"children": [
+			"ps-button-call-modal",
 			"flex-layout.row#home-banners",
       		"flex-layout.row#shelf-titlediv1responsive",
       		"flex-layout.row#shelf1",

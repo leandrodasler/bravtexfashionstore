@@ -1,6 +1,9 @@
 {
   "responsive-layout.tablet#pdp": {
-    "children": ["flex-layout.row#product-main-tablet", "flex-layout.row#shelf-pdp-1"],
+    "children": [
+      "flex-layout.row#product-main-tablet",
+      "flex-layout.row#shelf-pdp-1"
+    ],
     "title": "PdP - Tablet"
   },
   "flex-layout.row#product-main-tablet": {
@@ -11,7 +14,10 @@
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true
     },
-    "children": ["flex-layout.col#stack-tablet", "flex-layout.col#right-col-tablet"]
+    "children": [
+      "flex-layout.col#stack-tablet",
+      "flex-layout.col#right-col-tablet"
+    ]
   },
   "flex-layout.col#stack-tablet": {
     "children": ["stack-layout"],
@@ -29,7 +35,14 @@
       "preventHorizontalStretch": true,
       "blockClass": "product-info-content"
     },
-    "children": ["flex-layout.col#product-info-pdp", "rich-text#texto-entrega", "rich-text#texto-cep", "flex-layout.col#shipping-product"],
+    "children": [
+      "flex-layout.col#product-info-pdp",
+      "livestreaming-snack-size-videos",
+      "ps-product",
+      "rich-text#texto-entrega",
+      "rich-text#texto-cep",
+      "flex-layout.col#shipping-product"
+    ],
     "title": "Informações do Produto"
   }
 }

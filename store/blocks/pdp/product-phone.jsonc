@@ -1,6 +1,9 @@
 {
   "responsive-layout.phone#pdp": {
-    "children": ["flex-layout.row#product-main-mobile", "flex-layout.row#shelf-pdp-1"],
+    "children": [
+      "flex-layout.row#product-main-mobile",
+      "flex-layout.row#shelf-pdp-1"
+    ],
     "title": "PdP - Phone"
   },
   "flex-layout.row#product-main-mobile": {
@@ -25,14 +28,25 @@
       "width": "43%",
       "blockClass": "product-info-content"
     },
-    "children": ["flex-layout.col#product-info-pdp", "rich-text#texto-entrega", "rich-text#texto-cep", "flex-layout.col#shipping-product"],
+    "children": [
+      "flex-layout.col#product-info-pdp",
+      "livestreaming-snack-size-videos",
+      "ps-product",
+      "rich-text#texto-entrega",
+      "rich-text#texto-cep",
+      "flex-layout.col#shipping-product"
+    ],
     "title": "Informações do Produto"
   },
   "flex-layout.col#product-brand-name-ref": {
     "props": {
       "blockClass": "product-name-ref-brand-container"
     },
-    "children": ["vtex.store-components:product-brand", "vtex.store-components:product-name", "product-identifier.product"]
+    "children": [
+      "vtex.store-components:product-brand",
+      "vtex.store-components:product-name",
+      "product-identifier.product"
+    ]
   },
   "flex-layout.row#product-brand-wish-share": {
     "props": {
