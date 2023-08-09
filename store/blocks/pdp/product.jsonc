@@ -206,9 +206,10 @@
   "flex-layout.row#title-shelf-pdp-1": {
     "props": {
       "blockClass": "title-shelf-pdp-container",
-      "colSizing": "auto"
+      "colSizing": "auto",
+      "paddingTop": 9
     },
-    "children": ["rich-text#title-shelf-1", "menu-item#shelf-link1"]
+    "children": ["rich-text#title-shelf-1"]
   },
   "rich-text#title-shelf-1": {
     "props": {

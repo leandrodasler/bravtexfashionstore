@@ -116,6 +116,7 @@
 		"children": [
 			"stack-layout#productsum",
 			"flex-layout.row#shelfNameAndHeart",
+			"product-summary-space",
 			"flex-layout.row#selling-and-list-price"
 		]
 	},
