@@ -13,9 +13,6 @@
   width: 28px;
   height: 28px;
 }
-.openIconContainer {
-  padding: 12px 0;
-}
 .minicartQuantityBadgeDefault {
   color: #fff7f2;
   background: #f71963;
@@ -25,25 +22,7 @@
   height: 12px;
   font-size: 0.65rem !important;
 }
-@media only screen and (min-width: 641px) {
-  .openIconContainer::after {
-    max-width: 50px;
-    display: inline-flex;
-    vertical-align: middle;
-    padding-left: 8px;
-    font-size: 14px;
-    font-weight: bold;
-    color: #f71963;
-    white-space: nowrap;
-  }
-  .minicartWrapperContainer {
-    width: 97px !important;
-  }
-}
 @media only screen and (max-width: 640px) {
-  .openIconContainer {
-    margin: 0;
-  }
   .minicartContainer :global(.vtex-button) {
     margin: 0 11px;
   }

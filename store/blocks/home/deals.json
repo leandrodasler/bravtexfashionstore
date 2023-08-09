@@ -1,11 +1,11 @@
 {
   "flex-layout.row#deals": {
+    "title": "Vantagens",
     "children": ["slider-layout#deals"],
     "props": {
       "blockClass": ["deals"],
       "paddingBottom": 9
-    },
-    "title": "Régua de Vantagens"
+    }
   },
 
   "slider-layout#deals": {

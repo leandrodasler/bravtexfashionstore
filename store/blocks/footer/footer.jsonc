@@ -35,7 +35,7 @@
 	"rich-text#texto-cartoes": {
 		"props": {
 			"blockClass": "footer-payment-methods-text",
-			"text": "Aceitamos cartões de débito, crédito e vale alimentação"
+			"text": "Formas de pagamento"
 		},
 		"title": "Footer payment text"
 	},
@@ -58,45 +58,45 @@
 	"image#visa": {
 		"props": {
 			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/cartaovisa.png",
-			"maxHeight": 24,
-			"maxWidth": 32,
+			"maxHeight": 40,
+			"maxWidth": 60,
 			"blockClass": "first-img-grid"
 		}
 	},
 	"image#master": {
 		"props": {
 			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/cartaomaster.png",
-			"maxHeight": 24,
-			"maxWidth": 32
+			"maxHeight": 40,
+			"maxWidth": 60
 		}
 	},
 	"image#elo": {
 		"props": {
 			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/cartaoamerican.png",
-			"maxHeight": 24,
-			"maxWidth": 32
+			"maxHeight": 40,
+			"maxWidth": 60
 		}
 	},
 	"image#diners": {
 		"props": {
 			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/cartaoelo.png",
-			"maxHeight": 24,
-			"maxWidth": 32
+			"maxHeight": 40,
+			"maxWidth": 60
 		}
 	},
 	"image#aexpress": {
 		"props": {
 			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/cartaohipercard.png",
-			"maxHeight": 24,
-			"maxWidth": 32,
+			"maxHeight": 40,
+			"maxWidth": 60,
 			"blockClass": "first-img-grid"
 		}
 	},
 	"image#alelo": {
 		"props": {
 			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/cartaohiper.png",
-			"maxHeight": 24,
-			"maxWidth": 32
+			"maxHeight": 40,
+			"maxWidth": 60
 		}
 	},
 	"flex-layout.row#footer-3-desktop": {
@@ -147,7 +147,7 @@
 	},
 	"rich-text#footer": {
 		"props": {
-			"text": "VTEX Fashion © - 2021 - Todos os direitos reservados.",
+			"text": "VTEX Fashion © - 2023 - Todos os direitos reservados.",
 			"blockClass": "footer-copyright"
 		},
 		"title": "Footer copyright text"

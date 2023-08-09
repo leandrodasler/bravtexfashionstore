@@ -38,36 +38,6 @@
     },
     "children": ["flex-layout.row#product-name", "kitlook", "rich-text#texto-entrega", "rich-text#texto-cep", "flex-layout.col#shipping-product"]
   },
-  // "responsive-layout.desktop#pdp": {
-  //   "children": ["flex-layout.row#product-main"],
-  //   "title": "PdP - Desktop"
-  // },
-  // "flex-layout.row#specifications-title": {
-  //   "children": ["rich-text#specifications"]
-  // },
-  // "rich-text#specifications": {
-  //   "props": {
-  //     "text": "##### Product Specifications"
-  //   }
-  // },
-  // "flex-layout.row#product-breadcrumb": {
-  //   "props": {
-  //     "blockClass": "breadcrumb-pdp-container"
-  //   },
-  //   "children": ["vtex.breadcrumb:breadcrumb"]
-  // },
-  // "flex-layout.row#description": {
-  //   "props": {
-  //     "blockClass": "product-description-container"
-  //   },
-  //   "children": ["product-description"]
-  // },
-  // "flex-layout.col#review": {
-  //   "props": {
-  //     "blockClass": "product-review-container"
-  //   },
-  //   "children": ["product-reviews"]
-  // },
   "flex-layout.row#product-main": {
     "props": {
       "blockClass": "pdp-main-container",
@@ -163,21 +133,12 @@
     },
     "children": ["flex-layout.row#selling-and-list-price"]
   },
-  "flex-layout.row#custom-add-to-cart-quantity-stepper": {
-    "props": {
-      "blockClass": "product-add-to-cart-quantity-stepper-container"
-    },
-    "children": ["add-to-cart-quantity-stepper"]
-  },
   "flex-layout.row#quantity-buy-button-custom-component": {
     "props": {
       "blockClass": "quantity-and-buy-btn-container",
       "colSizing": "auto"
     },
     "children": ["add-to-list-btn#heart-pdp", "add-to-cart-button#pdp"]
-  },
-  "add-to-cart-quantity-stepper#pdp": {
-    "blocks": ["add-to-cart-button#pdp"]
   },
   "rich-text#texto-entrega": {
     "props": {
@@ -203,13 +164,6 @@
   "flex-layout.col#shipping-product": {
     "children": ["shipping-simulator"]
   },
-  "flex-layout.row#product-brand": {
-    "props": {
-      "blockClass": "product-brand-container"
-    },
-    "children": ["vtex.store-components:product-brand"],
-    "title": "Marca do Produto"
-  },
   "vtex.store-components:product-brand": {
     "props": {
       "displayMode": "text",
@@ -229,19 +183,6 @@
       "visibility": "always"
     }
   },
-  "flex-layout.row#quantity-buy-button": {
-    "props": {
-      "blockClass": "quantity-and-buy-btn-container",
-      "preventHorizontalStretch": true
-    },
-    "children": ["product-quantity", "add-to-cart-button#pdp"]
-  },
-  "flex-layout.row#buy-button": {
-    "props": {
-      "blockClass": "buy-btn-container"
-    },
-    "children": ["add-to-cart-button#pdp"]
-  },
   "add-to-cart-button#pdp": {
     "props": {
       "blockClass": "pdp-add-to-cart-btn",
@@ -250,16 +191,6 @@
       "text": "ADICIONAR"
     },
     "title": "Botão - Adicionar ao Carrinho"
-  },
-  "share#default": {
-    "props": {
-      "social": {
-        "Facebook": true,
-        "WhatsApp": true,
-        "Twitter": false,
-        "Pinterest": true
-      }
-    }
   },
   "share#custom": {
     "props": {
@@ -271,21 +202,6 @@
         "Pinterest": false
       }
     }
-  },
-  "flex-layout.col#wish-and-share": {
-    "children": ["flex-layout.row#wish-and-share"],
-    "props": {
-      "width": "8%",
-      "blockClass": "pdp-wish-and-share-container"
-    },
-    "title": "Favorito + Compartilhamento"
-  },
-  "flex-layout.row#wish-and-share": {
-    "props": {
-      "blockClass": "pdp-wish-and-share-content",
-      "preventHorizontalStretch": true
-    },
-    "children": ["share#custom"]
   },
   "flex-layout.row#title-shelf-pdp-1": {
     "props": {
@@ -302,21 +218,6 @@
       "textPosition": "LEFT"
     },
     "title": "Titulo - Produtos Relacionados #1"
-  },
-  "menu-item#shelf-link-pdp": {
-    "props": {
-      "blockClass": "shelfLink",
-      "id": "shelfLink2",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/masculino/roupas/camisetas",
-        "noFollow": false,
-        "tagTitle": "shelfLink",
-        "text": "VER TODOS"
-      }
-    }
   },
   "flex-layout.row#shelf-pdp-1": {
     "props": {

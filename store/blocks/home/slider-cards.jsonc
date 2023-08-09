@@ -1,0 +1,109 @@
+{
+  "flex-layout.row#slider-cards": {
+    "title": "Slider Cards",
+    "children": ["slider-layout#slider-cards"],
+    "props": {
+      "fullWidth": false,
+      "paddingBottom": 9
+    }
+  },
+  "slider-layout#slider-cards": {
+    "props": {
+      "blockClass": "slider-cards",
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      },
+      "centerMode": "to-the-left",
+      "centerModeSlidesGap": "0",
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never",
+      // "navigationStep": 1,
+      "fullWidth": true
+    },
+    "children": [
+      "info-card#collection-1",
+      "info-card#collection-2",
+      "info-card#collection-3",
+      "info-card#collection-4",
+      "info-card#collection-5"
+    ]
+  },
+  "info-card#collection-1": {
+    "props": {
+      "blockClass": "collection",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://bravtexfashionstore.vtexassets.com/assets/vtex.file-manager-graphql/images/02bea026-0e98-4011-8683-6149f3f4a9f8___f371ea081f6d9290466d3b2a919a6100.jpeg",
+      "headline": " ",
+      "subhead": "### o melhor *jeans*",
+      "textMode": "rich-text",
+      "callToActionMode": "button",
+      "callToActionText": "Conferir",
+      "callToActionUrl": "/jeans",
+      "imageActionUrl": "/jeans"
+    }
+  },
+  "info-card#collection-2": {
+    "props": {
+      "blockClass": "collection",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://bravtexfashionstore.vtexassets.com/assets/vtex.file-manager-graphql/images/dcd429ce-68b0-470f-8343-a2bb6c8e0d16___08dc76305db3e20542422ed02c9fdfea.jpeg",
+      "headline": "### **looks** ***casuais***",
+      "subhead": "",
+      "textMode": "rich-text",
+      "callToActionMode": "button",
+      "callToActionText": "Conferir",
+      "callToActionUrl": "/casual",
+      "imageActionUrl": "/casual"
+    }
+  },
+  "info-card#collection-3": {
+    "props": {
+      "blockClass": "collection",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://bravtexfashionstore.vtexassets.com/assets/vtex.file-manager-graphql/images/b32df2e4-1d2f-44a1-bf22-ff877f60ceaa___18e72a93023948e2b8e56b0e995a766d.jpeg",
+      "headline": "### blusinhas *básicas*",
+      "subhead": "",
+      "textMode": "rich-text",
+      "callToActionMode": "button",
+      "callToActionText": "Conferir",
+      "callToActionUrl": "/feminino/roupas/camisetas",
+      "imageActionUrl": "/feminino/roupas/camisetas"
+    }
+  },
+  "info-card#collection-4": {
+    "props": {
+      "blockClass": "collection",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://bravtexfashionstore.vtexassets.com/assets/vtex.file-manager-graphql/images/9b303903-bc0e-457b-816d-97e757bb4de4___bd129d191f1fd0b4cba0a2b2385a5025.jpeg",
+      "headline": "### **seu** ***tênis perfeito***",
+      "subhead": "",
+      "textMode": "rich-text",
+      "callToActionMode": "button",
+      "callToActionText": "Conferir",
+      "callToActionUrl": "#",
+      "imageActionUrl": "#"
+    }
+  },
+  "info-card#collection-5": {
+    "props": {
+      "blockClass": "collection",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://bravtexfashionstore.vtexassets.com/assets/vtex.file-manager-graphql/images/3238ee2d-87e8-449c-adbc-e5e484d60743___bc988c0a5575b176cc4cbf700ed7c1ee.jpeg",
+      "headline": "### looks *formais*",
+      "subhead": "",
+      "textMode": "rich-text",
+      "callToActionMode": "button",
+      "callToActionText": "Conferir",
+      "callToActionUrl": "#",
+      "imageActionUrl": "#"
+    }
+  }
+}

@@ -1,13 +1,14 @@
 .paragraph--dontmiss, .paragraph--dontmissfidelidade{
 	text-align: center;
-	margin-bottom: 2rem;
 	margin-top: 0;
+	font-size: 1rem;
 }
 .paragraph--dontmissglobaltitle {
 	font-size: 40px;
 }
 .paragraph--dontmissTitle {
-	font-size: 28px;
+	font-family: Fabriga;
+	font-weight: 600;
 }
 .link--dontmissTitle {
 	text-decoration: none;
@@ -78,16 +79,6 @@
 	font-size: 12px;
 	line-height: 16px;
 	color: #F71963;
-}
-.container--shelfTitle {
-	font-style: normal;
-	font-size: 36px;
-	line-height: 52px;
-	justify-content: flex-start;
-	text-align: left;
-	max-width: 1440px;
-	padding: 16px 0;
-	margin: auto;
 }
 .wrapper--shelfTitle {
 	width: 100%;

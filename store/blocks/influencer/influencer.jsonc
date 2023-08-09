@@ -64,7 +64,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/masculino/roupas/camisetas",
+        "href": "/masculino/camisetas?initialMap=c&initialQuery=masculino&map=category-1,category-3",
         "noFollow": false,
         "text": "VER TODOS"
       }
@@ -78,7 +78,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/masculino/roupas/camisetas",
+        "href": "/masculino/camisetas?initialMap=c&initialQuery=masculino&map=category-1,category-3",
         "noFollow": false,
         "text": "VER TODOS"
       }
@@ -216,7 +216,8 @@
       "colGap": 1
     },
     "children": [
-      "flex-layout.col#influencer-vtexclub-cards",
+      // "flex-layout.col#influencer-vtexclub-cards",
+      "flex-layout.col#dontmiss-fidelidade",
       "flex-layout.row#influencer-cards"
     ]
   },

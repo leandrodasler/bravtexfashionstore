@@ -1,0 +1,106 @@
+{
+  "flex-layout.row#top-slider-banners": {
+    "title": "Slider Banners",
+    "children": ["list-context.image-list#top-slider-banners"],
+    "props": {
+      "fullWidth": true,
+      "paddingBottom": 9
+    }
+  },
+  "list-context.image-list#top-slider-banners": {
+    "children": ["slider-layout#top-slider-banners"],
+    "props": {
+      "height": 650,
+      "images": [
+        {
+          "image": "https://bravtexfashionstore.vtexassets.com/assets/vtex.file-manager-graphql/images/f4c4be63-3650-4d9e-b083-4f34ecb5c505___e778355bc0ebe87f1903a59b760c1e3f.png",
+          "description": "Coleção Pure",
+          "link": {
+            "url": "/142?map=productClusterIds"
+          }
+        },
+        {
+          "image": "https://bravtexfashionstore.vtexassets.com/assets/vtex.file-manager-graphql/images/4360a16a-4e87-4b49-ad39-a9615bd993aa___b45fdc759a4f2be70bea2d454f92564f.png",
+          "description": "Básico",
+          "link": {
+            "url": "/casual"
+          }
+        },
+        {
+          "image": "https://bravtexfashionstore.vtexassets.com/assets/vtex.file-manager-graphql/images/b0fd6221-71a2-4bec-9a19-104bcc8bf831___09203f76d1b984afbcc52dca539bf133.png",
+          "description": "Liberdade",
+          "link": {
+            "url": "/#"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#top-slider-banners": {
+    "props": {
+      "autoplay": {
+        "stopOnHover": true,
+        "timeout": 8000
+      },
+      "itemsPerPage": 1,
+      "infinite": true
+    }
+  },
+  "flex-layout.row#half-banners": {
+    "title": "Half Banners",
+    "children": ["slider-layout#half-banners"],
+    "props": {
+      "paddingBottom": 9,
+      "fullWidth": false
+    }
+  },
+  "slider-layout#half-banners": {
+    "props": {
+      "blockClass": ["collection"],
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 1
+      },
+      "centerMode": "disabled",
+      "showNavigationArrows": "mobileOnly",
+      "showPaginationDots": "never",
+      "fullWidth": true,
+      "infinite": true
+    },
+    "children": ["image#half-banner-1", "image#half-banner-2"]
+  },
+  "image#half-banner-1": {
+    "props": {
+      "src": "https://bravtexfashionstore.vtexassets.com/assets/vtex.file-manager-graphql/images/6db5c286-8e59-4aad-81ae-cff9c6c9dc1d___957b3c40a2d1de089162c30dccf774e4.png",
+      "link": {
+        "url": "/savana"
+      }
+    }
+  },
+  "image#half-banner-2": {
+    "props": {
+      "src": "https://bravtexfashionstore.vtexassets.com/assets/vtex.file-manager-graphql/images/6f41603c-f546-4a59-86ef-738378161b41___7b9e093c297fad1b5e0644c47b0caa8c.png",
+      "link": {
+        "url": "/polo"
+      }
+    }
+  },
+  "flex-layout.row#bottom-banners": {
+    "title": "Bottom Banner",
+    "children": ["flex-layout.col", "image#bottom-banner", "flex-layout.col"],
+    "props": {
+      "paddingBottom": 9,
+      "colSizing": "auto",
+      "fullWidth": false
+    }
+  },
+  "image#bottom-banner": {
+    "props": {
+      "src": "https://bravtexfashionstore.vtexassets.com/assets/vtex.file-manager-graphql/images/69b3bd7e-307e-4aa0-809e-79b63c30a29a___27b80e6157d00b10fc4998644a9e8d24.png",
+      "link": {
+        "url": "/masculino/camisetas?initialMap=c&initialQuery=masculino&map=category-1,category-3"
+      }
+    }
+  }
+}

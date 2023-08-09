@@ -1,0 +1,211 @@
+{
+  "flex-layout.row#shelf-titlediv1": {
+    "children": ["flex-layout.row#shelf-title1"],
+    "props": {
+      "paddingBottom": 6,
+      "blockClass": ["shelf-titlediv1"]
+    },
+    "title": "Home - Prateleira 1 - Título"
+  },
+  "flex-layout.row#shelf-title1": {
+    "children": ["rich-text#shelf-title1", "menu-item#shelf-link1"],
+    "props": {
+      "blockClass": ["shelf-title"],
+      "colSizing": "auto"
+    },
+    "title": "Home - Prateleira 1 - Título"
+  },
+  "rich-text#shelf-title1": {
+    "props": {
+      "text": "## Polos",
+      "blockClass": "shelfTitle"
+    },
+    "title": "Prateleira 1 - Título"
+  },
+  "menu-item#shelf-link1": {
+    "props": {
+      "blockClass": "shelfLink",
+      "id": "shelfLink1",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/polo",
+        "noFollow": false,
+        "tagTitle": "shelfLink",
+        "text": "VER TODOS"
+      }
+    }
+  },
+  "menu-item#shelf-link2": {
+    "props": {
+      "blockClass": "shelfLink",
+      "id": "shelfLink2",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/vestido",
+        "noFollow": false,
+        "tagTitle": "shelfLink",
+        "text": "VER TODOS"
+      }
+    }
+  },
+  "menu-item#shelf-link3": {
+    "props": {
+      "blockClass": "shelfLink",
+      "id": "shelfLink3",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/142?map=productClusterIds&order=OrderByReleaseDateDESC",
+        "noFollow": false,
+        "tagTitle": "shelfLink",
+        "text": "VER TODOS"
+      }
+    }
+  },
+  "flex-layout.row#shelf1": {
+    "props": {
+      "paddingBottom": 9,
+      "blockClass": ["home-shelf-1"]
+    },
+    "children": ["flex-layout.col#shelf1"],
+    "title": "Home - Prateleira 1"
+  },
+  "flex-layout.col#shelf1": {
+    "children": [
+      "list-products-collection-order-v2#shelf-1"
+    ],
+    "props": {
+      "blockClass": "shelf2",
+      "width": "100%",
+      "horizontalAlign": "center"
+    },
+    "title": "Prateleira 1 - Prateleira"
+  },
+  "list-products-collection-order-v2#shelf-1": {
+    "title": "Prateleira 1 - Coleção ordenada",
+    "blocks": ["product-summary.shelf#home"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "collection": "159",
+      "orderBy": "OrderByCollection"
+    }
+  },
+  "flex-layout.row#shelf-titlediv2": {
+    "children": ["flex-layout.row#shelf-title2"],
+    "props": {
+      "paddingBottom": 6,
+      "blockClass": ["shelf-titlediv2"]
+    },
+    "title": "Home - Prateleira 2 - Título"
+  },
+  "flex-layout.row#shelf-title2": {
+    "children": ["rich-text#shelf-title2", "menu-item#shelf-link2"],
+    "props": {
+      "blockClass": ["shelf-title"],
+      "colSizing": "auto"
+    },
+    "title": "Home - Prateleira 2 - Título"
+  },
+  "rich-text#shelf-title2": {
+    "props": {
+      "text": "## Vestidos",
+      "blockClass": "shelfTitle"
+    },
+    "title": "Prateleira 2 - Título"
+  },
+  "flex-layout.row#shelf2": {
+    "props": {
+      "paddingBottom": 9,
+      "blockClass": ["home-shelf-2"]
+    },
+    "children": ["flex-layout.col#shelf2"],
+    "title": "Home - Prateleira 2"
+  },
+  "flex-layout.col#shelf2": {
+    "children": ["list-products-collection-order-v2#shelf-2"],
+    "props": {
+      "blockClass": "shelf2",
+      "width": "100%",
+      "horizontalAlign": "center"
+    },
+    "title": "Prateleira 2 - Prateleira"
+  },
+  "list-products-collection-order-v2#shelf-2": {
+    "title": "Prateleira 2 - Coleção ordenada",
+    "blocks": ["product-summary.shelf#home"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "category": "2/5/8",
+      "orderBy": "OrderByNameASC"
+    }
+  },
+  "flex-layout.row#shelf-titlediv3": {
+    "children": ["flex-layout.row#shelf-title3"],
+    "props": {
+      "paddingBottom": 6,
+      "blockClass": ["shelf-titlediv"]
+    },
+    "title": "Home - Prateleira 3 - Título"
+  },
+  "flex-layout.row#shelf-title3": {
+    "children": ["rich-text#shelf-title3", "menu-item#shelf-link3"],
+    "props": {
+      "blockClass": ["shelf-title"],
+      "colSizing": "auto"
+    },
+    "title": "Home - Prateleira 3 - Título"
+  },
+  "rich-text#shelf-title3": {
+    "props": {
+      "text": "## Lançamentos",
+      "blockClass": "shelfTitle"
+    },
+    "title": "Prateleira 3 - Título"
+  },
+  "flex-layout.row#shelf-home-3": {
+    "props": {
+      "paddingBottom": 9,
+      "blockClass": ["home-shelf-3"]
+    },
+    "children": ["flex-layout.col#shelf3"],
+    "title": "Home - Prateleira 3"
+  },
+  "flex-layout.col#shelf3": {
+    "children": ["list-products-collection-order-v2#shelf-3"],
+    "props": {
+      "blockClass": "shelf2",
+      "width": "100%",
+      "horizontalAlign": "center"
+    },
+    "title": "Prateleira 3 - Prateleira"
+  },
+  "list-products-collection-order-v2#shelf-3": {
+    "title": "Prateleira 3 - Coleção ordenada",
+    "blocks": ["product-summary.shelf#home"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "collection": "142",
+      "orderBy": "OrderByReleaseDateDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf",
+      "showPaginationDots": "never",
+      "showNavigationArrows": "desktopOnly"
+    },
+    "title": "Prateleira 1 - Slider"
+  }
+}
