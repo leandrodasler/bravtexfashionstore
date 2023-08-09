@@ -1,9 +1,6 @@
 {
   "store.custom#top-sales": {
-    "blocks": [
-      "search-result-layout.customQuery#top-sales",
-      "flex-layout.row#newsletter"
-    ]
+    "blocks": ["search-result-layout.customQuery#top-sales"]
   },
   "search-result-layout.customQuery#top-sales": {
     "props": {
