@@ -3,7 +3,7 @@
 		"children": [
 			"stack-layout#prodsum",
 			"flex-layout.row#shelfNameAndHeart",
-			"flex-layout.row#selling-and-list-price-shelf"
+			"flex-layout.row#selling-and-list-price"
 		]
 	},
 
@@ -63,7 +63,7 @@
 		"children": [
 			"stack-layout#prodsum",
 			"flex-layout.row#shelfNameAndHeart",
-			"flex-layout.row#selling-and-list-price-shelf"
+			"flex-layout.row#selling-and-list-price"
 		]
 	},
 	"flex-layout.row#add-btn-shelf-pdp-custom-component": {

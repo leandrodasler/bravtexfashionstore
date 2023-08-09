@@ -1,0 +1,115 @@
+{
+  "flex-layout.row#deals": {
+    "children": ["slider-layout#deals"],
+    "props": {
+      "blockClass": ["deals"],
+      "paddingBottom": 9
+    },
+    "title": "Régua de Vantagens"
+  },
+
+  "slider-layout#deals": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "mobileOnly",
+      "showPaginationDots": "never",
+      "blockClass": "deals"
+    },
+    "children": [
+      "flex-layout.col#deals1",
+      "flex-layout.col#deals2",
+      "flex-layout.col#deals3",
+      "flex-layout.col#deals4"
+    ]
+  },
+
+  "flex-layout.col#deals1": {
+    "children": ["image#deal1", "rich-text#deal1"],
+    "props": {
+      "blockClass": "deals"
+    },
+    "title": "Régua de Vantagens - Item 1"
+  },
+  "flex-layout.col#deals2": {
+    "children": ["image#deal2", "rich-text#deal2"],
+    "props": {
+      "blockClass": "deals"
+    },
+    "title": "Régua de Vantagens - Item 2"
+  },
+  "flex-layout.col#deals3": {
+    "children": ["image#deal3", "rich-text#deal3"],
+    "props": {
+      "blockClass": "deals"
+    },
+    "title": "Régua de Vantagens - Item 3"
+  },
+  "flex-layout.col#deals4": {
+    "children": ["image#deal4", "rich-text#deal4"],
+    "props": {
+      "blockClass": "deals"
+    },
+    "title": "Régua de Vantagens - Item 4"
+  },
+  "image#deal1": {
+    "props": {
+      "src": "https://bravtexgrocerystore.vtexassets.com/arquivos/store.png",
+      "maxHeight": "40px"
+    },
+    "title": "Régua de Vantagens - Imagem 1"
+  },
+  "rich-text#deal1": {
+    "props": {
+      "text": "### Clique e Retire \nNas lojas físicas",
+      "blockClass": "deals-not-found"
+    },
+    "title": "Régua de Vantagens - Texto 1"
+  },
+  "image#deal2": {
+    "props": {
+      "src": "https://bravtexgrocerystore.vtexassets.com/arquivos/truck.png",
+      "maxHeight": "40px"
+    },
+    "title": "Régua de Vantagens - Imagem 2"
+  },
+  "rich-text#deal2": {
+    "props": {
+      "text": "### Delivery \nPara o seu conforto",
+      "blockClass": "deals-not-found"
+    },
+    "title": "Régua de Vantagens - Texto 2"
+  },
+  "image#deal3": {
+    "props": {
+      "src": "https://bravtexgrocerystore.vtexassets.com/arquivos/local.png",
+      "maxHeight": "40px"
+    },
+    "title": "Régua de Vantagens - Imagem 3"
+  },
+  "rich-text#deal3": {
+    "props": {
+      "text": "### Localização \nEncontrar nossas lojas",
+      "blockClass": "deals-not-found"
+    },
+    "title": "Régua de Vantagens - Texto 3"
+  },
+  "image#deal4": {
+    "props": {
+      "src": "https://bravtexfashionstore.vtexassets.com/arquivos/live-shopping.png",
+      "maxHeight": "40px"
+    },
+    "title": "Régua de Vantagens - Imagem 4"
+  },
+  "rich-text#deal4": {
+    "props": {
+      "text": "### Live Shopping \nExperiência ao vivo",
+      "blockClass": "deals-not-found"
+    },
+    "title": "Régua de Vantagens - Texto 4"
+  }
+}

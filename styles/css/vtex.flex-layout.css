@@ -6,13 +6,13 @@
 }
 .flexColChild--pdp-selling-and-list-price-container :global(.vtex-product-price-1-x-installments) {
 	font-weight: 400;
-	font-size: 20px;
-	color: #A1A8B3;
+	font-size: 1rem;
+	color: #4A596B;
 }
 .flexColChild--pdp-selling-and-list-price-container :global(.vtex-product-price-1-x-installmentsNumber),
 .flexColChild--pdp-selling-and-list-price-container :global(.vtex-product-price-1-x-installmentValue)  {
 	font-weight: 700;
-	color: #A1A8B3;
+	color: #4A596B;
 }
 .flexRowContent--menu-link,
 .flexRowContent--main-header {
@@ -49,19 +49,6 @@
 .flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
 	color: #727273;
 	font-size: 14px;
-}
-.flexRow--deals {
-	max-width: 1440px;
-	padding: 16px 0 0;
-	margin: auto;
-	background-color: #fff;
-}
-.flexRowContent--deals {
-	padding: 16px 64px 32px;
-	border-radius: 8px;
-	margin-left: -0.25rem;
-	margin-right: -0.25rem;
-	width: auto;
 }
 .flexRow--deals .stretchChildrenWidth {
 	align-items: center;
@@ -187,7 +174,7 @@
 }
 .flexRowContent--shelf-titlediv1,
 .flexRowContent--shelf-titlediv2 {
-	max-width: 1238px;
+	max-width: 1440px;
 	margin: auto;
 }
 @media (min-width: 1200px) {
@@ -197,7 +184,7 @@
 }
 
 .flexRowContent--category-menu-header {
-	max-width: 1238px;
+	max-width: 1440px;
 	margin: 0 auto;
 	margin-bottom: 0.5rem;
 }
@@ -426,24 +413,6 @@
 .flexRow--did-you-mean-suggestions {
 	margin-bottom: 20px;
 }
-.flexRow--deals-not-found {
-	margin: 32px 0;
-}
-.flexRowContent--deals-not-found {
-	background: #fff;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: flex-start;
-	padding: 24px 48px;
-	box-shadow: 0px 0px 1px rgba(86, 115, 101, 0.15), 0px 2px 4px rgba(86, 115, 101, 0.15);
-	border-radius: 6px;
-}
-.flexCol--deals-not-found {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
 .flexRow--not-found-shelf .flexCol--pdp-selling-and-list-price-container {
 	margin-bottom: 8px;
 	height: 36px;
@@ -478,7 +447,7 @@
 	width: auto !important;
 }
 .flexRow--infoCards {
-	max-width: 1238px;
+	max-width: 1440px;
 	margin: auto;
 	margin-bottom: 5rem;
 }
@@ -519,9 +488,6 @@
 .flexColChild--infoCardFidelidade:last-child {
 	margin-top: 2.5rem;
 }
-.flexRow--pdp-main-container {
-	margin: 5rem 0;
-}
 :global(.vtex-disclosure-layout-1-x-content) :global(.vtex-reviews-and-ratings-1-x-container):last-child {
 	display: none !important;
 }
@@ -534,9 +500,6 @@
 @media (min-width: 1540px) {
 	.flexRow--home-shelf-1 {
 		padding: 0;
-	}
-	.flexRow--deals {
-		padding: 16px 0 0;
 	}
 	.flexRow--banner-home {
 		padding: 48px 0 16px;
@@ -579,7 +542,7 @@
 	.flexRowContent--menu-link,
 	.flexRowContent--main-header,
 	.flexRowContent--category-menu-header {
-		max-width: 1238px;
+		max-width: 1440px;
 	}
 	.flexRowContent--top-bar-row-1 .stretchChildrenWidth:first-child {
 		width: 30% !important;
@@ -589,7 +552,7 @@
 	.flexRowContent--menu-link,
 	.flexRowContent--main-header,
 	.flexRowContent--category-menu-header {
-		max-width: 1238px;
+		max-width: 1440px;
 	}
 	.flexRowContent--top-bar-row-1 .stretchChildrenWidth:first-child {
 		width: 33% !important;
@@ -599,7 +562,7 @@
 	.flexRowContent--menu-link,
 	.flexRowContent--main-header,
 	.flexRowContent--category-menu-header {
-		max-width: 1238px;
+		max-width: 1440px;
 	}
 	.flexRowContent--top-bar-row-1 .stretchChildrenWidth:first-child {
 		width: 35% !important;
@@ -805,27 +768,16 @@
 		padding: 0;
 	}
 
-	.flexRow--deals {
-		padding: 16px 0 0;
-	}
-
 	.flexRow--banner-home {
 		padding: 48px 0 16px;
 	}
 }
 @media (max-width: 1279px) {
-	.flexRowContent--deals {
-		padding: 16px 8px 32px;
-	}
 	.flexRowContent--category-menu-header {
 		padding: 0 0.5rem;
 	}
 }
 @media (max-width: 1024px) {
-	.flexCol--deals {
-		padding: 0 30px;
-		margin: 0;
-	}
 	.flexRow--wholesale {
 		height: 41px;
 		margin-top: 0;

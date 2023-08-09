@@ -195,11 +195,9 @@ div[class*='vtex-my-account-1-x-userInfo'] {
 	outline: none;
 	color: #F71963;
 	font-weight: bold;
-	font-size: 16px;
 }
 :global(.vtex-pageHeader-link__container) :global(.vtex-button) span[class*='ml3 ttu t-action--small'] {
 	font-weight: bold;
-	font-size: 16px;
 }
 :global(.vtex-pageHeader-link__container) :global(.vtex-button__label) {
 	padding: 12px 0 0 !important;
@@ -219,7 +217,6 @@ div[class*='vtex-my-account-1-x-userInfo'] {
 .userGreeting,
 :global(.vtex-pageHeader__title) {
 	color: #36403b;
-	font-size: 16px;
 	font-weight: normal;
 	margin: 0;
 }
@@ -492,14 +489,6 @@ form[class*='vtex-profile-form-3-x-profileContainer']
 	display: initial;
 	color: #848a87;
 }
-/* div[class*='flex flex-grow-1 w-100 flex-column'] :global(.vtex-add-to-cart-button-0-x-buttonText) {
-	font-size: 0;
-} */
-/* div[class*='flex flex-grow-1 w-100 flex-column'] :global(.vtex-add-to-cart-button-0-x-buttonText)::before {
-	content: 'Adicionar';
-	font-weight: bold;
-	font-size: 16px;
-} */
 div[class*='flex flex-grow-1 w-100 flex-column'] :global(.vtex-product-summary-2-x-price_sellingPrice) {
 	font-weight: 800;
 	font-size: 28px;
@@ -589,7 +578,6 @@ main[class*='vtex-account__page-body  vtex-my-account-1-x-addressEdit'] {
 }
 .addressEdit :global(.vtex-button.bg-action-primary) :global(.vtex-button__label)::before {
 	content: 'Salvar Alterações';
-	font-size: 16px;
 	text-transform: capitalize;
 	font-weight: bold;
 }
@@ -599,7 +587,6 @@ main[class*='vtex-account__page-body  vtex-my-account-1-x-addressEdit'] {
 }
 .addressEdit :global(.vtex-button.bg-danger) :global(.vtex-button__label)::before {
 	content: 'Excluir Endereço';
-	font-size: 16px;
 	text-transform: capitalize;
 	font-weight: bold;
 }
@@ -929,19 +916,16 @@ div[class*='cf fr db w-100 w-30-ns pt0-xl pt5']
 	button[class*='vtex-my-orders-app-3-x-reorderBtn']
 	span[class*='vtex-my-orders-app-3-x-font'] {
 	font-weight: bold;
-	font-size: 16px;
 	color: #00289c;
 }
 a[class*='vtex-my-orders-app-3-x-cancelBtn'] span[class*='vtex-my-orders-app-3-x-font'] {
 	font-weight: bold;
-	font-size: 16px;
 	color: #c11638;
 }
 a[class*='vtex-my-orders-app-3-x-detailsBtn'] {
 	background: #e6fff3;
 	color: #FEDDE8;
 	font-weight: bold;
-	font-size: 16px;
 }
 a[class*='vtex-my-orders-app-3-x-orderProductName'] {
 	font-weight: bold;
@@ -1368,7 +1352,6 @@ span[class*='vtex-my-orders-app-3-x-orderProductQuantityValue']
 		> span::before {
 		content: 'Cancelar Pedido';
 		font-weight: bold;
-		font-size: 16px;
 	}
 	:global(.vtex-account__orders-list)
 		div[class*='vtex-my-orders-app-3-x-orderBody']
@@ -1601,7 +1584,7 @@ span[class*='vtex-my-orders-app-3-x-orderProductQuantityValue']
 	}
 	:global(.vtex-account) > div {
 		padding: 30px 5% 30px;
-		/* max-width: 1238px !important; */
+		/* max-width: 1440px !important; */
 		margin: 0 auto;
 	}
 	/*Título da página*/

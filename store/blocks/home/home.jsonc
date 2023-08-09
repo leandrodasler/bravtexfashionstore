@@ -1,11 +1,29 @@
 {
   "store.home": {
-    "blocks": ["responsive-layout.desktop#home", "responsive-layout.tablet#home", "responsive-layout.phone#home"]
+    // "blocks": [
+    //   "responsive-layout.desktop#home",
+    //   "responsive-layout.tablet#home",
+    //   "responsive-layout.phone#home"
+    // ],
+    "children": [
+      "ps-button-call-modal",
+      "flex-layout.row#home-banners",
+      "flex-layout.row#deals",
+      "flex-layout.row#collections",
+      "flex-layout.row#shelf-titlediv1",
+      "flex-layout.row#shelf1",
+      "flex-layout.row#shelf-titlediv2",
+      "flex-layout.row#shelf2",
+      "flex-layout.row#half-banners",
+      "flex-layout.row#info-cards"
+    ]
   },
   "responsive-layout.desktop#home": {
     "children": [
       "ps-button-call-modal",
       "flex-layout.row#home-banners",
+      "flex-layout.row#deals",
+      "flex-layout.row#collections",
       "flex-layout.row#shelf-titlediv1",
       "flex-layout.row#shelf1",
       "flex-layout.row#shelf-titlediv2",
@@ -15,24 +33,188 @@
     "title": "Home - Desktop"
   },
   "flex-layout.row#home-banners": {
-    "children": ["flex-layout.col#home-banners"]
-  },
-  "flex-layout.col#home-banners": {
-    "children": ["image#firstbanner", "image#secondbanner"],
+    "title": "Slider Banners",
+    "children": ["list-context.image-list#home-banners"],
     "props": {
-      "blockClass": "homeBanners"
+      "fullWidth": true,
+      "paddingBottom": 9
     }
   },
-  "image#firstbanner": {
+  "list-context.image-list#home-banners": {
+    "children": ["slider-layout#home-banners"],
     "props": {
-      "src": "https://bravtexfashionstore.vtexassets.com/arquivos/shine.png",
-      "maxWidth": "100%"
+      "height": 650,
+      "images": [
+        {
+          "image": "https://bravtexfashionstore.vtexassets.com/assets/vtex.file-manager-graphql/images/f4c4be63-3650-4d9e-b083-4f34ecb5c505___e778355bc0ebe87f1903a59b760c1e3f.png",
+          "description": "Coleção Pure"
+        },
+        {
+          "image": "https://bravtexfashionstore.vtexassets.com/assets/vtex.file-manager-graphql/images/4360a16a-4e87-4b49-ad39-a9615bd993aa___b45fdc759a4f2be70bea2d454f92564f.png",
+          "description": "Basic"
+        },
+        {
+          "image": "https://bravtexfashionstore.vtexassets.com/assets/vtex.file-manager-graphql/images/b0fd6221-71a2-4bec-9a19-104bcc8bf831___09203f76d1b984afbcc52dca539bf133.png",
+          "description": "Liberdade"
+        }
+      ]
     }
   },
-  "image#secondbanner": {
+  "slider-layout#home-banners": {
     "props": {
-      "src": "https://bravtexfashionstore.vtexassets.com/arquivos/outunoinverno.png",
-      "maxWidth": "100%"
+      "autoplay": {
+        "stopOnHover": true,
+        "timeout": 8000
+      },
+      "itemsPerPage": 1,
+      "infinite": true
+    }
+  },
+  "flex-layout.row#collections": {
+    "title": "Slider Cards",
+    "children": ["slider-layout#collections"],
+    "props": {
+      "fullWidth": false,
+      "paddingBottom": 9
+    }
+  },
+  "slider-layout#collections": {
+    "props": {
+      "blockClass": "collections",
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      },
+      "centerMode": "to-the-left",
+      "centerModeSlidesGap": "0",
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never",
+      "navigationStep": 1,
+      "fullWidth": true
+    },
+    "children": [
+      "info-card#collection-1",
+      "info-card#collection-2",
+      "info-card#collection-3",
+      "info-card#collection-4"
+    ]
+  },
+  "info-card#collection-1": {
+    "props": {
+      "blockClass": "collection",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://bravtexfashionstore.vtexassets.com/assets/vtex.file-manager-graphql/images/02bea026-0e98-4011-8683-6149f3f4a9f8___f371ea081f6d9290466d3b2a919a6100.jpeg",
+      "headline": " ",
+      "subhead": "### o melhor *jeans*",
+      "textMode": "rich-text",
+      "callToActionMode": "button",
+      "callToActionText": "Conferir",
+      "callToActionUrl": "/jeans",
+      "imageActionUrl": "/jeans"
+    }
+  },
+  "info-card#collection-2": {
+    "props": {
+      "blockClass": "collection",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://bravtexfashionstore.vtexassets.com/assets/vtex.file-manager-graphql/images/dcd429ce-68b0-470f-8343-a2bb6c8e0d16___08dc76305db3e20542422ed02c9fdfea.jpeg",
+      "headline": "### **looks** ***casuais***",
+      "subhead": "",
+      "textMode": "rich-text",
+      "callToActionMode": "button",
+      "callToActionText": "Conferir",
+      "callToActionUrl": "/casual",
+      "imageActionUrl": "/casual"
+    }
+  },
+  "info-card#collection-3": {
+    "props": {
+      "blockClass": "collection",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://bravtexfashionstore.vtexassets.com/assets/vtex.file-manager-graphql/images/b32df2e4-1d2f-44a1-bf22-ff877f60ceaa___18e72a93023948e2b8e56b0e995a766d.jpeg",
+      "headline": "### blusinhas *básicas*",
+      "subhead": "",
+      "textMode": "rich-text",
+      "callToActionMode": "button",
+      "callToActionText": "Conferir",
+      "callToActionUrl": "/feminino/roupas/camisetas",
+      "imageActionUrl": "/feminino/roupas/camisetas"
+    }
+  },
+  "info-card#collection-4": {
+    "props": {
+      "blockClass": "collection",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://bravtexfashionstore.vtexassets.com/assets/vtex.file-manager-graphql/images/9b303903-bc0e-457b-816d-97e757bb4de4___bd129d191f1fd0b4cba0a2b2385a5025.jpeg",
+      "headline": "### **seu** ***tênis perfeito***",
+      "subhead": "",
+      "textMode": "rich-text",
+      "callToActionMode": "button",
+      "callToActionText": "Conferir",
+      "callToActionUrl": "#",
+      "imageActionUrl": "#"
+    }
+  },
+  "flex-layout.row#half-banners": {
+    "title": "Half Banners",
+    "children": ["slider-layout#half-banners"],
+    "props": {
+      "fullWidth": false
+    }
+  },
+  "slider-layout#half-banners": {
+    "props": {
+      "blockClass": ["collection", "half-banner"],
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 2
+      },
+      "centerMode": "disabled",
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      // "navigationStep": 1,
+      "fullWidth": true
+    },
+    "children": [
+      "info-card#half-banner-1",
+      "info-card#half-banner-2"
+    ]
+  },
+  "info-card#half-banner-1": {
+    "props": {
+      "blockClass": ["collection", "half-banner"],
+      "isFullModeStyle": true,
+      // "textPosition": "center",
+      "imageUrl": "https://bravtexfashionstore.vtexassets.com/assets/vtex.file-manager-graphql/images/6db5c286-8e59-4aad-81ae-cff9c6c9dc1d___957b3c40a2d1de089162c30dccf774e4.png",
+      // "headline": " ",
+      // "subhead": "### o melhor *jeans*",
+      // "textMode": "rich-text",
+      // "callToActionMode": "button",
+      // "callToActionText": "Conferir",
+      // "callToActionUrl": "/jeans",
+      "imageActionUrl": "/savana"
+    }
+  },
+  "info-card#half-banner-2": {
+    "props": {
+      "blockClass": ["collection", "half-banner"],
+      "isFullModeStyle": true,
+      // "textPosition": "center",
+      "imageUrl": "https://bravtexfashionstore.vtexassets.com/assets/vtex.file-manager-graphql/images/6f41603c-f546-4a59-86ef-738378161b41___7b9e093c297fad1b5e0644c47b0caa8c.png",
+      // "headline": "### **looks** ***casuais***",
+      // "subhead": "",
+      // "textMode": "rich-text",
+      // "callToActionMode": "button",
+      // "callToActionText": "Conferir",
+      // "callToActionUrl": "/casual",
+      "imageActionUrl": "/polo"
     }
   },
   "flex-layout.row#info-cards": {
@@ -156,23 +338,23 @@
     }
   },
   "flex-layout.row#shelf-titlediv1": {
-		"children": ["flex-layout.row#shelf-title1"],
-		"props": {
-			"blockClass": ["shelf-titlediv1"]
-		},
-		"title": "Home - Prateleira 1 - Título"
-	},
+    "children": ["flex-layout.row#shelf-title1"],
+    "props": {
+      "blockClass": ["shelf-titlediv1"]
+    },
+    "title": "Home - Prateleira 1 - Título"
+  },
   "flex-layout.row#shelf-title1": {
-		"children": ["rich-text#shelf-title1", "menu-item#shelf-link1"],
-		"props": {
-			"blockClass": ["shelf-title"],
+    "children": ["rich-text#shelf-title1", "menu-item#shelf-link1"],
+    "props": {
+      "blockClass": ["shelf-title"],
       "colSizing": "auto"
-		},
-		"title": "Home - Prateleira 1 - Título"
-	},
+    },
+    "title": "Home - Prateleira 1 - Título"
+  },
   "rich-text#shelf-title1": {
     "props": {
-      "text": "## Lançamentos",
+      "text": "## Polos",
       "blockClass": "shelfTitle"
     },
     "title": "Prateleira 1 - Título"
@@ -185,7 +367,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/masculino/roupas/camisetas",
+        "href": "/polo",
         "noFollow": false,
         "tagTitle": "shelfLink",
         "text": "VER TODOS"
@@ -200,7 +382,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/masculino/roupas/camisetas",
+        "href": "/vestido",
         "noFollow": false,
         "tagTitle": "shelfLink",
         "text": "VER TODOS"
@@ -215,7 +397,9 @@
     "title": "Home - Prateleira 1"
   },
   "flex-layout.col#shelf1": {
-    "children": [/* "list-context.product-list#demo1",  */"list-products-collection-order-v2#shelf-1"],
+    "children": [
+      /* "list-context.product-list#demo1",  */ "list-products-collection-order-v2#shelf-1"
+    ],
     "props": {
       "blockClass": "shelf2",
       "width": "100%",
@@ -228,7 +412,8 @@
     "blocks": ["product-summary.shelf#home"],
     "children": ["slider-layout#demo-products1"],
     "props": {
-      "collection": "141"
+      "collection": "159",
+      "orderBy": "OrderByCollection"
     }
   },
   // "list-context.product-list#demo1": {
@@ -255,23 +440,23 @@
     "title": "Prateleira 1 - Slider"
   },
   "flex-layout.row#shelf-titlediv2": {
-		"children": ["flex-layout.row#shelf-title2"],
-		"props": {
-			"blockClass": ["shelf-titlediv2"]
-		},
-		"title": "Home - Prateleira 2 - Título"
-	},
+    "children": ["flex-layout.row#shelf-title2"],
+    "props": {
+      "blockClass": ["shelf-titlediv2"]
+    },
+    "title": "Home - Prateleira 2 - Título"
+  },
   "flex-layout.row#shelf-title2": {
-		"children": ["rich-text#shelf-title2", "menu-item#shelf-link2"],
-		"props": {
-			"blockClass": ["shelf-title"],
+    "children": ["rich-text#shelf-title2", "menu-item#shelf-link2"],
+    "props": {
+      "blockClass": ["shelf-title"],
       "colSizing": "auto"
-		},
-		"title": "Home - Prateleira 2 - Título"
-	},
+    },
+    "title": "Home - Prateleira 2 - Título"
+  },
   "rich-text#shelf-title2": {
     "props": {
-      "text": "## Lançamentos",
+      "text": "## Vestidos",
       "blockClass": "shelfTitle"
     },
     "title": "Prateleira 2 - Título"
@@ -284,7 +469,9 @@
     "title": "Home - Prateleira 2"
   },
   "flex-layout.col#shelf2": {
-    "children": [/* "list-context.product-list#demo2",  */"list-products-collection-order-v2#shelf-2"],
+    "children": [
+      /* "list-context.product-list#demo2",  */ "list-products-collection-order-v2#shelf-2"
+    ],
     "props": {
       "blockClass": "shelf2",
       "width": "100%",
@@ -297,7 +484,8 @@
     "blocks": ["product-summary.shelf#home"],
     "children": ["slider-layout#demo-products2"],
     "props": {
-      "collection": "142"
+      "category": "2/5/8",
+      "orderBy": "OrderByNameASC"
     }
   },
   // "list-context.product-list#demo2": {

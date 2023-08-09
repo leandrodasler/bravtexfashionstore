@@ -49,11 +49,6 @@
   align-items: center;
   justify-content: center;
 }
-.menuContainer .styledLinkContent {
-  color: #142032;
-  font-weight: 400;
-  font-size: 16px;
-}
 .submenuContainer--megamenu-header .menuItem--main-category-menu {
     display: flex;
     align-items: center;
@@ -105,7 +100,6 @@
 .styledLinkContainer--pdp-product-menu-information {
   margin: 0;
   text-decoration: underline;
-  font-size: 16px;
   color: #f71963;
 }
 .styledLinkContainer--pdp-ship-menu-information {

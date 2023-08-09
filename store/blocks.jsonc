@@ -63,7 +63,7 @@
 		"props": {
 			"blockClass": "search-bar-header",
 			"openAutocompleteOnFocus": true,
-			"placeholder": "Pesquise por produtos ou marca...",
+			"placeholder": "O que você está buscando?",
 			"maxWidth": 700
 		}
 	},
@@ -116,7 +116,7 @@
 		"children": [
 			"stack-layout#productsum",
 			"flex-layout.row#shelfNameAndHeart",
-			"flex-layout.row#selling-and-list-price-shelf"
+			"flex-layout.row#selling-and-list-price"
 		]
 	},
 	"stack-layout#productsum": {

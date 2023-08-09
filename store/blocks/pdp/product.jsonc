@@ -1,6 +1,13 @@
 {
   "store.product.kitlook": {
-    "children": ["kitlook-layout"]
+    "children": ["flex-layout.row#product-breadcrumb", "kitlook-layout"]
+  },
+  "flex-layout.row#product-breadcrumb": {
+    "props": {
+      "paddingTop": 4,
+      "paddingBottom": 6
+    },
+    "children": ["vtex.breadcrumb:breadcrumb"]
   },
   "kitlook-layout": {
     "children": [
@@ -31,36 +38,36 @@
     },
     "children": ["flex-layout.row#product-name", "kitlook", "rich-text#texto-entrega", "rich-text#texto-cep", "flex-layout.col#shipping-product"]
   },
-  "responsive-layout.desktop#pdp": {
-    "children": ["flex-layout.row#product-main"],
-    "title": "PdP - Desktop"
-  },
-  "flex-layout.row#specifications-title": {
-    "children": ["rich-text#specifications"]
-  },
-  "rich-text#specifications": {
-    "props": {
-      "text": "##### Product Specifications"
-    }
-  },
-  "flex-layout.row#product-breadcrumb": {
-    "props": {
-      "blockClass": "breadcrumb-pdp-container"
-    },
-    "children": ["vtex.breadcrumb:breadcrumb"]
-  },
-  "flex-layout.row#description": {
-    "props": {
-      "blockClass": "product-description-container"
-    },
-    "children": ["product-description"]
-  },
-  "flex-layout.col#review": {
-    "props": {
-      "blockClass": "product-review-container"
-    },
-    "children": ["product-reviews"]
-  },
+  // "responsive-layout.desktop#pdp": {
+  //   "children": ["flex-layout.row#product-main"],
+  //   "title": "PdP - Desktop"
+  // },
+  // "flex-layout.row#specifications-title": {
+  //   "children": ["rich-text#specifications"]
+  // },
+  // "rich-text#specifications": {
+  //   "props": {
+  //     "text": "##### Product Specifications"
+  //   }
+  // },
+  // "flex-layout.row#product-breadcrumb": {
+  //   "props": {
+  //     "blockClass": "breadcrumb-pdp-container"
+  //   },
+  //   "children": ["vtex.breadcrumb:breadcrumb"]
+  // },
+  // "flex-layout.row#description": {
+  //   "props": {
+  //     "blockClass": "product-description-container"
+  //   },
+  //   "children": ["product-description"]
+  // },
+  // "flex-layout.col#review": {
+  //   "props": {
+  //     "blockClass": "product-review-container"
+  //   },
+  //   "children": ["product-reviews"]
+  // },
   "flex-layout.row#product-main": {
     "props": {
       "blockClass": "pdp-main-container",
