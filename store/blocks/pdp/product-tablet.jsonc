@@ -36,9 +36,10 @@
       "blockClass": "product-info-content"
     },
     "children": [
+      "pa-widget",
       "flex-layout.col#product-info-pdp",
       "livestreaming-snack-size-videos",
-      "ps-product",
+      // "ps-product",
       "rich-text#texto-entrega",
       "rich-text#texto-cep",
       "flex-layout.col#shipping-product"

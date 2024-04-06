@@ -1,7 +1,8 @@
 {
   "store.home": {
     "children": [
-      "ps-button-call-modal",
+      "pa-widget",
+      // "ps-button-call-modal",
       "flex-layout.row#top-slider-banners",
       "flex-layout.row#deals",
       "flex-layout.row#slider-cards",
