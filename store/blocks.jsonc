@@ -19,6 +19,21 @@
 		}
 	},
 
+	"flex-layout.row#livestreaming-home": {
+		"title": "Live Streaming Home",
+		"children": ["livestreaming-snack-size-videos#home"],
+		"props": {
+			"fullWidth": false,
+			"paddingBottom": 9
+		}
+	},
+
+	"livestreaming-snack-size-videos#home": {
+		"props": {
+			"variant": "carousel"
+		}
+	},
+
 	/*"store.account": {
 		"blocks": ["my-account"],
 		"parent": {

@@ -4,6 +4,7 @@
       "pa-widget",
       // "ps-button-call-modal",
       "flex-layout.row#top-slider-banners",
+      "flex-layout.row#livestreaming-home",
       "flex-layout.row#deals",
       "flex-layout.row#slider-cards",
       "__fold__",
