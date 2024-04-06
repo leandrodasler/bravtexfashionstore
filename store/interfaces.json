@@ -1,5 +1,5 @@
 {
   "store.product.kitlook": {
-    "allowed": ["kitlook-layout", "kitlook"]
+    "allowed": ["kitlook-layout", "kitlook", "pa-widget", "flex-layout.row"]
   }
 }
